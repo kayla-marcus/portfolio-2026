@@ -597,11 +597,15 @@
         videoSource.src = './assets/videos/hero-title.mp4';
         heroVideo.width = 496;
       } else if (window.innerWidth <= 520) {
+        console.log("Changing to hero-title.mp4");
         videoSource.src = './assets/videos/hero-title.mp4';
+        console.log("Changing to 320");
         heroVideo.width = 320;
       } else {
         videoSource.src = './assets/videos/hero-title-small.mp4';
+        console.log("Changing to hero-title.mp4");
         heroVideo.width = 808;
+        console.log("Changing to 320");
       }
       
       heroVideo.load();
