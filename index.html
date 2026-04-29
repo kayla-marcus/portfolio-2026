@@ -595,7 +595,9 @@
       if (!videoSource) return;
 
       console.log("in update hero video 2");
-      console.log(window.innerWidth);
+      console.log("innerWidth:", window.innerWidth);
+      console.log("clientWidth:", document.documentElement.clientWidth);
+      console.log("screen.width:", screen.width);
       
       if (window.innerWidth <= 1079 && window.innerWidth > 520) {
         console.log("Changing to in first option");
