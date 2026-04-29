@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self-Service Onboarding Design - Kayla Marcus Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/caseStudy.css" />
+    <link rel="icon" href="../assets/logo-navy.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="../index.html"><img class="logo" alt="Kayla Marcus's logo" src="../assets/logo-navy.png"></a>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">
+                        <img src="../assets/icons/home-round.png" alt="index.html">Home
+                    </a></li>
+                <li><a href="../portfolio.html">
+                        <img src="../assets/icons/portfolio-filled.png" alt="portfolio.html">Portfolio
+                    </a></li>
+                <li><a href="../about.html">
+                        <img src="../assets/icons/about.png" alt="about.html">About
+                    </a></li>
+                <a href="../contact.html" class="btn">Contact Me</a>
+            </ul>
+            <a href="../contact.html" class="btn">Contact Me</a>
+        </nav>
+    </header>
+    <div class="layout">
+        <div id="topbar" class="topbar expanded">
+            <div id="topbar-trigger"></div>
+            <div class="topbar-inner">
+                <div class="content">
+                    <h3>Dream™ Case Studies</h3>
+                    <div class="link">
+                        <div class="topbar-first">
+                            <h4>Top Case Studies</h4>
+                            <ul>
+                                <li><a href="./repairTicketRedesign.html">Repair Workflow Usability
+                                        Redesign</a></li>
+                                <li><a href="./designSystem.html">Dream™ Design System</a></li>
+                                <li><a href="./navigationRedesign.html">Navigation Redesign</a></li>
+                            </ul>
+                        </div>
+                        <div class="topbar-second">
+                            <h4>More Case Studies</h4>
+                            <ul>
+                                <li><a href="./designInHouseUsers.html">Designing for In-House Users</a></li>
+                                <li><a href="./visualReporting.html">Visual Reporting</a></li>
+                                <li class="active"><a href="./onboarding.html">Onboarding & First User Experience</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="../caseStudy.html" class="btn-secondary">Go Back</a>
+                </div>
+            </div>
+        </div>
+
+        <main class="case-content">
+            <section class="case-section">
+                <h1>Self-Service Onboarding Design</h1>
+                <p>Dream™ Asset Management is used by K–12 districts to manage Chromebooks, repairs, and inventory. For
+                    years, the only way to access Dream™ was through a manual onboarding process run entirely by company
+                    staff, meaning users could not sign up for the platform themselves. Since SaaS norms lean toward
+                    instant access and frictionless self-led demos, <strong>Dream™'s onboarding model became a
+                        barrier</strong> for new
+                    schools,
+                    curious prospects, and even internal teams.</p>
+                <p class="add-space">To modernize the experience, I designed the onboarding flow to allow schools and
+                    users to self-serve. The new approach introduced three clear paths: joining an existing district,
+                    creating a new district account, or detecting an existing user. Each was designed to <strong>quickly
+                        guide
+                        people
+                        into the product</strong> without requiring sales or support intervention.
+                </p>
+                <div class="btn-group">
+                    <a href="#visual-summary" class="btn">Jump to Visual Summary</a>
+                </div>
+            </section>
+
+            <section class="case-section light">
+                <h2>Context & Problem</h2>
+                <p>Before self-signup, the onboarding process was entirely manual. A school needed to purchase
+                    Chromebooks or services before being given access. Someone at the company had to create the
+                    district’s account, invite users, and walk them through a demo. Even non-customers who were simply
+                    interested in Dream™ had to request a demo and wait for a representative to create an account for
+                    them. <strong>There was no way to try the product independently and without feeling like a
+                        commitment had to
+                        be made right away.</strong></p>
+                <p>The biggest pain point was simple: <strong>users couldn’t self-serve</strong>. People expect to
+                    create accounts
+                    instantly, especially when evaluating software. Instead, Dream™ required a sales or support
+                    representative to intervene, slowing adoption and adding unnecessary friction to the very first step
+                    of the product experience.</p>
+                <div class="callout-container">
+                    <div class="callout">
+                        <p><b>To replace the manual process, we needed 3 separate onboarding flows becuase each
+                                situtation resulted in a different end-state:</b></p>
+                        <ol class="add-space">
+                            <li><strong>Join an existing school account</strong>
+                                <ul>
+                                    <li>If the user entered a school email domain already in Dream™, they were told the
+                                        district existed and could request to join.</li>
+                                    <li>The district admin would be notified, and meanwhile the user could view a demo.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Create a new school account</strong>
+                                <ul>
+                                    <li>If the domain didn’t exist, the user could create a district account by entering
+                                        required details (school name, admin name, phone, etc.).</li>
+                                </ul>
+                            </li>
+                            <li><strong>Handle existing users or invalid email domains</strong>
+                                <ul>
+                                    <li>If the email was already associated with an account, they were guided to sign
+                                        in.</li>
+                                    <li>If the email wasn’t associated with a K–12 school domain, they were informed
+                                        that Dream™ was currently for K–12 only.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <p>There were no risks of duplicates because the system checked the database before creating new
+                    accounts. If a school or user already existed, the interface clearly communicated what to do next.
+                    While this was a new process for Dream™, it aligned with familiar patterns in modern SaaS
+                    onboarding.
+                </p>
+            </section>
+
+            <section class="case-section light noTop">
+                <h2>Goals</h2>
+                <p>The primary goals were to:</p>
+                <ol class="olPadding">
+                    <li><strong>Speed up adoption</strong> by letting users onboard without waiting for a sales
+                        representative.</li>
+                    <li><strong>Improve first-time experience</strong> and reduce friction.</li>
+                    <li><strong>Increase user adoption</strong>by guiding people directly into Dream™.</li>
+                    <li><strong>Encourage Google Admin Console sync</strong>, which helps districts pull device data
+                        into the system.</li>
+                </ol>
+                <p>While no specific KPIs were defined to my knowledge, the overall objective was clear:
+                    <strong>streamline onboarding so more schools and users enter the platform successfully</strong>,
+                    with fewer manual touchpoints from internal teams.
+                </p>
+            </section>
+
+            <section class="case-section">
+                <h2>Design Process</h2>
+                <p>Because this was a brand-new feature, I started by reviewing the user stories and researching
+                    onboarding patterns from well-known SaaS products. Most required very little to get started, often
+                    just an email and password, so I aimed for a similarly simple experience.</p>
+                <p>I collaborated closely with the software development team lead, who served as a bridge between
+                    leadership, engineering, and design. He helped clarify data requirements and technical constraints
+                    for each flow. When copy or tone decisions were needed, especially when telling users they couldn’t
+                    join, I partnered with Marketing to ensure the messaging felt supportive, not dismissive.</p>
+                <hr class="dark">
+                <p><b>A key UX challenge:</b> A UX disagreement between me and the lead developer arose when designing
+                    for a user who needed to join an existing district's account. I felt the user should verify their
+                    email first, then choose to request access. The lead developer preferred automatically sending the
+                    request once the email was
+                    verified.</p>
+                <p><strong>I proposed a middle ground</strong>: the verification email button
+                    read <b>“Verify & Request Access.</b>” This preserved the developer’s logic
+                    while keeping the user informed and in control.</p>
+                <div class="callout-container">
+                    <div class="callout">
+                        <p><b>Two more UX challenges & decisions included:</b></p>
+                        <p><strong>1.. Handling invalid or existing emails</strong></p>
+                        <p class="add-space">The challenge was communicating “you can’t join” without creating
+                            frustration. I relied on
+                            Marketing to refine this message so it remained friendly and helpful.</p>
+                        <p><strong>2. Creating a new school account</strong></p>
+                        <p>The priority was to get the user into Dream quickly while still collecting necessary details.
+                            I split the process into two steps:</p>
+                        <ul>
+                            <li><b>Step 1</b>: Enter required information on one screen.</li>
+                            <li><b>Step 2</b>: Review details and accept Terms of Service.</li>
+                        </ul>
+                        <p class="add-space">After the account was created, the user was immediately prompted to sync
+                            their Google Admin
+                            Console. This popup could be dismissed, but appeared front-and-center to encourage
+                            completion.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-images" id="visual-summary">
+                <h2>Visual Summary</h2>
+                <div id="blurNotice" class="blur-notice">
+                    <img src="../assets/icons/warning_24dp_8D8F57.svg" alt="" class="banner-icon">
+                    <p>Since these designs are not live in Dream™ yet, the details have been intentionally blurred for
+                        confidentiality. The main elements of the designs are described in callout boxes.</p>
+                </div>
+                <p class="openImageText left">Tap or click the images below to view them full size in a new tab.</p>
+                <a href="../assets/images/case-study/projects/signup-quick-process.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/signup-quick-process.png"
+                        alt="Only requiring username and password to start the creation process and guiding users to checking their email decreases the time to get the user into the app."
+                        class="image-large" /></a>
+                <a href="../assets/images/case-study/projects/signup-fields-required.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/signup-fields-required.png"
+                        alt="Use incremental onboarding; only ask for necessary information to create the account."
+                        class="image-large" /></a>
+                <a href="../assets/images/case-study/projects/signup-sync.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/signup-sync.png"
+                        alt="Encourage users to sync their Google Admin Console, aligning with business goals."
+                        class="image-large" /></a>
+                <a href="../assets/images/case-study/projects/signup-prototype.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/signup-prototype.png"
+                        alt="Prototype to test all possible user flows, ensuring simple account creation."
+                        class="image-large" /></a>
+            </section>
+
+            <section class="case-section">
+                <h2>Outcome</h2>
+                <p>The new self-signup flows have not been implemented yet, but they are designed to significantly
+                    streamline the first-time experience. By removing the dependency on sales and support to create
+                    accounts, Dream would likely see:</p>
+                <ul>
+                    <li>More users entering the product</li>
+                    <li><strong>Faster adoption</strong> by new districts</li>
+                    <li><strong>Reduced manual work</strong> for internal teams</li>
+                    <li>A smoother and more modern onboarding experience</li>
+                </ul>
+                <p>Since the feature hasn’t launched, no feedback has been gathered yet. If I were to iterate further,
+                    I’d focus on validating the flows with real users, especially the copy around domain restrictions
+                    and
+                    the decision points within the join-district path.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn-secondary">Back to Top</button>
+
+    <footer>
+        <div class="summary">
+            <p class="accent-text">Thanks for stopping by!</p>
+            <p>I’m Kayla Marcus, a designer and developer passionate about turning complex ideas into clean,
+                beautiful
+                digital
+                experiences.</p>
+        </div>
+        <div class="actions">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <div class="social-icon"><a href="https://www.linkedin.com/in/kayla-marcus/" target="_blank"><img
+                            src="../assets/icons/linkedin_icon.png"></a></div>
+                <div class="social-icon"><a
+                        href="mailto:kayla.marc10@gmail.com?subject=Interested in Working With You!&body=Hi%20Kayla,%0D%0A%0D%0A"><img
+                            src="../assets/icons/mail.png"></a></div>
+            </div>
+            <p class="copyright">&copy; 2025 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const topbar = document.getElementById("topbar");
+        const trigger = document.getElementById("topbar-trigger");
+
+        function updateScrollState() {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            } else {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        }
+
+        window.addEventListener("scroll", updateScrollState);
+        updateScrollState(); // run on load
+
+        // Expand when hovering the trigger area (top ~100px)
+        trigger.addEventListener("mouseenter", () => {
+            // Only expand if the user has scrolled down past threshold
+            if (window.scrollY > 80) {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        });
+
+        // Collapse only when leaving entire bar — not while clicking inside it
+        topbar.addEventListener("mouseleave", () => {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            }
+        });
+    </script>
+    <script>
+        // Smooth scroll to top
+        document.getElementById("backToTop").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+        const btn = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            btn.style.display = window.scrollY > 200 ? "block" : "none";
+        });
+
+    </script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

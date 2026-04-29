@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repair Workflow Usability Redesign - Kayla Marcus Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/caseStudy.css" />
+    <link rel="icon" href="../assets/logo-navy.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="../index.html"><img class="logo" alt="Kayla Marcus's logo" src="../assets/logo-navy.png"></a>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">
+                        <img src="../assets/icons/home-round.png" alt="index.html">Home
+                    </a></li>
+                <li><a href="../portfolio.html">
+                        <img src="../assets/icons/portfolio-filled.png" alt="portfolio.html">Portfolio
+                    </a></li>
+                <li><a href="../about.html">
+                        <img src="../assets/icons/about.png" alt="about.html">About
+                    </a></li>
+                <a href="../contact.html" class="btn">Contact Me</a>
+            </ul>
+            <a href="../contact.html" class="btn">Contact Me</a>
+        </nav>
+    </header>
+    <div class="layout">
+        <div id="topbar" class="topbar expanded">
+            <div id="topbar-trigger"></div>
+            <div class="topbar-inner">
+                <div class="content">
+                    <h3>Dream™ Case Studies</h3>
+                    <div class="link">
+                        <div class="topbar-first">
+                            <h4>Top Case Studies</h4>
+                            <ul>
+                                <li class="active"><a href="./repairTicketRedesign.html">Repair Workflow Usability
+                                        Redesign</a></li>
+                                <li><a href="./designSystem.html">Dream™ Design System</a></li>
+                                <li><a href="./navigationRedesign.html">Navigation Redesign</a></li>
+                            </ul>
+                        </div>
+                        <div class="topbar-second">
+                            <h4>More Case Studies</h4>
+                            <ul>
+                                <li><a href="./designInHouseUsers.html">Designing for In-House Users</a></li>
+                                <li><a href="./visualReporting.html">Visual Reporting</a></li>
+                                <li><a href="./onboarding.html">Onboarding & First User Experience</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="../caseStudy.html" class="btn-secondary">Go Back</a>
+                </div>
+            </div>
+        </div>
+
+        <main class="case-content">
+            <section class="case-section">
+                <h1>Repair Workflow Usability Redesign</h1>
+                <p>The Repair Ticket Details screen is a core page of Dream™, where K-12 school technicians and
+                    support
+                    staff review
+                    repair status, device information, and next steps in the repair process. The previous layout
+                    presented all
+                    information at once, without clear hierarchy, which made it difficult for users to quickly
+                    locate
+                    specific details or understand what to do next. This resulted in <strong>slower task completion
+                        and
+                        an overall
+                        sense of cognitive overload</strong>.</p>
+                <p class="add-space">The goal of this redesign was to create a more intuitive and streamlined
+                    experience
+                    that organizes
+                    information into digestible sections, clarifies the current repair status, and guides users
+                    toward
+                    their next action. The updated layout <strong>introduces structured navigation, visual
+                        hierarchy,
+                        and a
+                        clearer workflow</strong>, helping users stay oriented and confident as they move through
+                    the
+                    repair process.
+                </p>
+                <div class="btn-group">
+                    <a href="#visual-summary" class="btn">Jump to Visual Summary</a>
+                </div>
+            </section>
+
+            <section class="case-section light">
+                <h2>Context & Problem</h2>
+                <p>Technicians spend a large portion of their day inside the Repair Ticket Details screen, often
+                    moving
+                    quickly between many tickets. The original layout presented every piece of information at
+                    once without visual grouping or guideance, including device specs, ticket notes, warranty
+                    details,
+                    repair steps, and more. While nothing was technically hidden, the amount of information on the
+                    screen created
+                    cognitive overload. Users had to scan and rescan to find the single detail they needed, which
+                    slowed
+                    their workflow and sometimes led to uncertainty.</p>
+                <p>Additionally, the repair status was displayed as a single line of text, making it difficult to
+                    understand where a device was in the overall process. There was no visual sense of progress or
+                    clarity about what should happen next. Completing the next step also required leaving the page
+                    and
+                    navigating elsewhere, which interrupted workflow and added extra clicks. Together, these issues
+                    made
+                    the experience feel cluttered and unintuitive, even though the functionality existed. The
+                    challenge
+                    was not only to add new features, but to reorganize and guide the experience so it supported
+                    technicians’
+                    work instead of getting in the way.</p>
+            </section>
+
+            <section class="case-section light noTop">
+                <h2>Goals</h2>
+                <ol class="olPadding">
+                    <li><strong>Establish a clear visual hierarchy</strong> so that technicians and support staff
+                        can
+                        quickly identify the repair status, key data, and next steps without scanning through dense
+                        text.</li>
+                    <li><strong>Reduce cognitive load</strong> by grouping related information and applying
+                        consistent
+                        spacing, labeling, and section organization.</li>
+                    <li><strong>Highlight high-priority information first</strong>, such as current status, repair
+                        type,
+                        and device information, to support faster decision-making during active repairs.</li>
+                    <li><strong>Improve readability and scannability</strong> across desktop and mobile by refining
+                        typography, spacing, and component patterns.</li>
+                </ol>
+            </section>
+
+            <section class="case-section">
+                <h2>Design Process</h2>
+                <p>I began by meeting with the product owner, who has direct communication with technicians and
+                    support
+                    users. He shared which parts of the current design felt overwhelming and which elements users
+                    still
+                    relied on. As a frequent user of Dream™ myself, I also experienced the same cognitive overload
+                    on
+                    the ticket details page: too much information presented at once, and no guidance toward what to
+                    do
+                    next. Because this page is one of the most frequently used areas in the app, improving clarity
+                    and
+                    focus was a priority.</p>
+                <div class="callout-container">
+                    <div class="callout">
+                        <p><b>In summary, the main pain points and concerns were:</b></p>
+                        <ul class="add-space">
+                            <li>Too much information surfaced at once, creating cognitive overload.</li>
+                            <li>No visual hierarchy, making it unclear what to focus on first.</li>
+                            <li>No guidance toward next steps, forcing users to interpret workflows themselves.</li>
+                            <li>High frequency of use, meaning even small inefficiencies had a large impact.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><b>Challenge:</b> To explore solutions, I created several low-fidelity layouts. My first approach
+                    grouped content
+                    into
+                    collapsible accordions, which initially reduced visual noise. However, something felt off about it.
+                    <strong>From a purely UI perspective, the design was solid, but I worried that the accordions would
+                        cause
+                        additional pain points rather than solving the orginal ones</strong>. Through discussion with
+                    the
+                    product owner, we realized users would likely open all the sections at once, recreating the same
+                    scrolling and clutter issues. So, I shifted to a tab-based structure, where content is cleanly
+                    separated without increasing complexity.
+                </p>
+                <p><b>Thought Process:</b> One reason I didn't think to use tabs was because accordions were used frequently throughout the app.
+                    To stay within the same design system, I automatically applied the accordion component to this
+                    design. However, I learned that something new or different isn't <i>bad</i> for the design system, as
+                    long as it follows the same structure as other components. In this case, the tabs used the standard
+                    spacing, color, and typography design tokens applied throughout the app. <strong>This design naturally expanded the app's design system.</strong></p>
+                <p>Throughout the design phase, I shared iterations with the product owner and the development team
+                    to
+                    ensure the layout aligned with user needs and remained technically feasible. A lead developer
+                    suggested incorporating a quick “highlight” section to surface key ticket details, which became
+                    a
+                    core feature of the redesign.</p>
+                <p>The result is a layout that significantly reduces cognitive load and supports user
+                    decision-making.
+                    Critical information is visible at a glance, while additional details remain accessible but
+                    unobtrusive. The new design guides users through ticket progress more intuitively and makes the
+                    interface feel calm, organized, and purposeful.</p>
+            </section>
+
+            <section class="case-images" id="visual-summary">
+                <h2>Visual Summary (Before & After)</h2>
+                <h3>Before - Original Repair Ticket Layout</h3>
+                <div id="blurNotice" class="blur-notice blue">
+                    <img src="../assets/icons/info-blue.svg" alt="" class="banner-icon">
+                    <p>The previous design has been intentionally blurred to maintain confidentiality and
+                        professionalism. I’d be happy to share the full version upon request or during an interview to
+                        better illustrate the improvements made.</p>
+                </div>
+                <a href="../assets/images/case-study/projects/repair-tickets-before.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/repair-tickets-before.png"
+                        alt="Before Screenshot. Issues include cognitive overload, poor visual hierachy, and a lack of guidenace for the user."
+                        class="image-large" /></a>
+                <p class="openImageText">Tap or click the image above to view it full size in a new tab.</p>
+                <hr>
+                <h3>After - Redesigned Repair Ticket Layout</h3>
+                <div id="blurNotice" class="blur-notice">
+                    <img src="../assets/icons/warning_24dp_8D8F57.svg" alt="" class="banner-icon">
+                    <p>Since this design is not live in Dream™ yet, the details have been intentionally blurred for
+                        confidentiality. The main elements of the design are described in callout boxes.</p>
+                </div>
+                <img src="../assets/images/case-study/projects/repair-tickets-after.png"
+                    alt="After Screenshot (Blurred). Improvements made include clear visual hierarchy for important information and actions, grouped content to reduce cognitive load, and visuals like a progress tracker and icons for immediate recognition."
+                    class="image-large" />
+                <p class="openImageText">Tap or click the image above to view it full size in a new tab.</p>
+            </section>
+
+            <section class="case-section">
+                <h2>Outcome</h2>
+                <p>The redesigned layout clearly reduces visual overwhelm and makes key information easier to
+                    identify
+                    at a glance. During internal review sessions, the product owner and development team were able
+                    to
+                    locate status details and next actions much faster than before, even without prior exposure to
+                    the
+                    new layout. The workflow now feels more guided and intentional, reducing the need to navigate
+                    away
+                    from the page. Although the redesign has not yet been released to users due to shifting
+                    priorities,
+                    it has been positively
+                    received by the team and is positioned to streamline technician workflows once implemented.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn-secondary">Back to Top</button>
+
+    <footer>
+        <div class="summary">
+            <p class="accent-text">Thanks for stopping by!</p>
+            <p>I’m Kayla Marcus, a designer and developer passionate about turning complex ideas into clean,
+                beautiful
+                digital
+                experiences.</p>
+        </div>
+        <div class="actions">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <div class="social-icon"><a href="https://www.linkedin.com/in/kayla-marcus/" target="_blank"><img
+                            src="../assets/icons/linkedin_icon.png"></a></div>
+                <div class="social-icon"><a
+                        href="mailto:kayla.marc10@gmail.com?subject=Interested in Working With You!&body=Hi%20Kayla,%0D%0A%0D%0A"><img
+                            src="../assets/icons/mail.png"></a></div>
+            </div>
+            <p class="copyright">&copy; 2025 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const topbar = document.getElementById("topbar");
+        const trigger = document.getElementById("topbar-trigger");
+
+        function updateScrollState() {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            } else {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        }
+
+        window.addEventListener("scroll", updateScrollState);
+        updateScrollState(); // run on load
+
+        // Expand when hovering the trigger area (top ~100px)
+        trigger.addEventListener("mouseenter", () => {
+            // Only expand if the user has scrolled down past threshold
+            if (window.scrollY > 80) {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        });
+
+        // Collapse only when leaving entire bar — not while clicking inside it
+        topbar.addEventListener("mouseleave", () => {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            }
+        });
+    </script>
+    <script>
+        // Smooth scroll to top
+        document.getElementById("backToTop").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+        const btn = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            btn.style.display = window.scrollY > 200 ? "block" : "none";
+        });
+
+    </script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

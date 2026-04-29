@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Reporting - Kayla Marcus Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/caseStudy.css" />
+    <link rel="icon" href="../assets/logo-navy.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="../index.html"><img class="logo" alt="Kayla Marcus's logo" src="../assets/logo-navy.png"></a>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">
+                        <img src="../assets/icons/home-round.png" alt="index.html">Home
+                    </a></li>
+                <li><a href="../portfolio.html">
+                        <img src="../assets/icons/portfolio-filled.png" alt="portfolio.html">Portfolio
+                    </a></li>
+                <li><a href="../about.html">
+                        <img src="../assets/icons/about.png" alt="about.html">About
+                    </a></li>
+                <a href="../contact.html" class="btn">Contact Me</a>
+            </ul>
+            <a href="../contact.html" class="btn">Contact Me</a>
+        </nav>
+    </header>
+    <div class="layout">
+        <div id="topbar" class="topbar expanded">
+            <div id="topbar-trigger"></div>
+            <div class="topbar-inner">
+                <div class="content">
+                    <h3>Dream™ Case Studies</h3>
+                    <div class="link">
+                        <div class="topbar-first">
+                            <h4>Top Case Studies</h4>
+                            <ul>
+                                <li><a href="./repairTicketRedesign.html">Repair Workflow Usability
+                                        Redesign</a></li>
+                                <li><a href="./designSystem.html">Dream™ Design System</a></li>
+                                <li><a href="./navigationRedesign.html">Navigation Redesign</a></li>
+                            </ul>
+                        </div>
+                        <div class="topbar-second">
+                            <h4>More Case Studies</h4>
+                            <ul>
+                                <li><a href="./designInHouseUsers.html">Designing for In-House Users</a></li>
+                                <li class="active"><a href="./visualReporting.html">Visual Reporting</a></li>
+                                <li><a href="./onboarding.html">Onboarding & First User Experience</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="../caseStudy.html" class="btn-secondary">Go Back</a>
+                </div>
+            </div>
+        </div>
+
+        <main class="case-content">
+            <section class="case-section">
+                <h1>Visual Reporting</h1>
+                <p>Dream™ Asset Management provides school districts with critical data including device usage, repair
+                    ticket
+                    activity, turnaround times, and more. When I joined the team, reports were heavily text- and
+                    table-based, making it difficult for users like district tech directors and superintendents to
+                    quickly digest information. While the data was valuable, the presentation lacked hierarchy, visual
+                    interest, and clarity.</p>
+                <p class="add-space">I led an initiative to redefine Dream™'s reporting experience by introducing visual
+                    reporting patterns, reusable components, and a more intuitive layout. The goal was to help users
+                    understand their data at a glance, without feeling overwhelmed or bored. By applying strong visual
+                    design principles like space, color, hierarchy, rhythm, and variety, I transformed complex data into
+                    something engaging, readable, and actually exciting to explore.
+                </p>
+                <div class="btn-group">
+                    <a href="#visual-summary" class="btn">Jump to Visual Summary</a>
+                </div>
+            </section>
+
+            <section class="case-section light">
+                <h2>Context & Problem</h2>
+                <p>Before this initiative, Dream’s reports relied primarily on tables and dense bar charts. Some charts
+                    displayed more than 15 bars at once, making it challenging to distinguish trends or key metrics.</p>
+                <div class="callout-container">
+                    <div class="callout">
+                        <p><b>While users didn’t explicitly complain, the issues were obvious:</b></p>
+                        <ul class="add-space">
+                            <li><strong>Too much data</strong> presented at equal weight.</li>
+                            <li>Little visual rhythm.</li>
+                            <li><strong>Minimal differentiation</strong> between primary and secondary insights.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>The challenge was to introduce visual reporting without overwhelming users or compromising the
+                    accuracy of the data. Visual design alone couldn’t solve the problem; reports needed to balance
+                    aesthetics with practical usability.
+                </p>
+            </section>
+
+            <section class="case-section light noTop">
+                <h2>Goals</h2>
+                <p>The primary goals for this initiative were to:</p>
+                <ol class="olPadding">
+                    <li>Transform data-heavy reports into <strong>visually intuitive, engaging experiences.</strong>
+                    </li>
+                    <li>Help users understand key insights <strong>faster and with less cognitive load.</strong></li>
+                    <li>Introduce <strong>visual hierarchy</strong> so important metrics stand out immediately.</li>
+                    <li>Build reusable visual-reporting patterns that scale across future reports</li>
+                    <li>Create reports users actually enjoy looking at—reports that spark interest rather than fatigue.
+                    </li>
+                </ol>
+                <p>Instead of focusing on one specific report, this initiative established a foundation for visual
+                    reporting across the entire platform.
+                </p>
+            </section>
+
+            <section class="case-section">
+                <h2>Design Process</h2>
+                <p>I worked closely with the product owner, who gathered needs and expectations directly from districts
+                    and school IT teams. Using this input, I explored different chart types, spatial arrangements,
+                    filtering behavior, and visual hierarchy to find the right balance between clarity and flexibility.
+                </p>
+                <p><b>Key UX Challenges: </b>The biggest challenge was <strong>keeping visuals useful without
+                        overloading the
+                        user</strong>. For example, a year-over-year bar graph ideally shows 12 data points—but some
+                    districts
+                    requested an 18-month view. Cramming 18 bars into a single graph would reduce readability. To solve
+                    this, <strong>I introduced a filter</strong> that allowed users to choose 12 or 18 months. This
+                    respected all user
+                    needs while keeping the default experience clean and digestible.</p>
+                <div class="callout-container">
+                    <div class="callout">
+                        <p><b>Key Design Decisions:</b></p>
+                        <ul class="add-space">
+                            <li>Introduced layout patterns that gave <strong>hierarchy</strong> to the most important
+                                metrics.</li>
+                            <li>Added <strong>filtering and interactive controls</strong> to prevent overcrowding.</li>
+                            <li>Selected chart types based on clarity, not novelty.</li>
+                            <li>Used Dream™'s design tokens while <strong>adding scalable new components</strong> (such
+                                as visual cards
+                                and chart containers).</li>
+                            <li>Incorporated empty states and hover behaviors that <strong>guide users</strong> rather
+                                than distract
+                                them.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Throughout the process, I focused on building components that could be reused across multiple report
+                    types, ensuring long-term scalability for the product.</p>
+            </section>
+
+            <section class="case-images" id="visual-summary">
+                <h2>Visual Summary</h2>
+                <p class="openImageText left">Tap or click the images below to view them full size in a new tab.</p>
+                <a href="../assets/images/case-study/projects/reporting-dashboard.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/reporting-dashboard.png"
+                        alt="Redesigning the Report Center with visual cards made it easier for users to identify each report."
+                        class="image-large" /></a>
+                <a href="../assets/images/case-study/projects/reporting-credits.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/reporting-credits.png"
+                        alt="A brand-aligned double bar graph with optional filters made credit usage instantly comparable."
+                        class="image-large" /></a>
+                <a href="../assets/images/case-study/projects/reporting-parts.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/reporting-parts.png"
+                        alt="Highlighting the top five most-used parts surfaced high-impact consumption patterns at a glance."
+                        class="image-large" /></a>
+                <a href="../assets/images/case-study/projects/reporting-breakage.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/reporting-breakage.png"
+                        alt="Report-level filters and color-coding circular progress bar made breakage rates instantly readable and actionable."
+                        class="image-large" /></a>
+            </section>
+
+            <section class="case-section">
+                <h2>Outcome</h2>
+                <p>The new visual reporting patterns made insights significantly faster to understand. Instead of
+                    scanning dense tables or deciphering crowded graphs, <strong>users can now pick up on trends
+                        immediately</strong>
+                    thanks to cleaner layouts, clear hierarchy, and interactive filters. Reports feel modern, engaging,
+                    and purposefully designed rather than functional but dull.</p>
+                <p>The initiative demonstrated that reports don’t need to be boring and that thoughtfully designed
+                    visuals can elevate both comprehension and user satisfaction. <strong>The new components also
+                        provide a
+                        strong foundation for future reporting features</strong>, making it easier for Dream to expand
+                    its analytics
+                    capabilities over time.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn-secondary">Back to Top</button>
+
+    <footer>
+        <div class="summary">
+            <p class="accent-text">Thanks for stopping by!</p>
+            <p>I’m Kayla Marcus, a designer and developer passionate about turning complex ideas into clean,
+                beautiful
+                digital
+                experiences.</p>
+        </div>
+        <div class="actions">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <div class="social-icon"><a href="https://www.linkedin.com/in/kayla-marcus/" target="_blank"><img
+                            src="../assets/icons/linkedin_icon.png"></a></div>
+                <div class="social-icon"><a
+                        href="mailto:kayla.marc10@gmail.com?subject=Interested in Working With You!&body=Hi%20Kayla,%0D%0A%0D%0A"><img
+                            src="../assets/icons/mail.png"></a></div>
+            </div>
+            <p class="copyright">&copy; 2025 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const topbar = document.getElementById("topbar");
+        const trigger = document.getElementById("topbar-trigger");
+
+        function updateScrollState() {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            } else {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        }
+
+        window.addEventListener("scroll", updateScrollState);
+        updateScrollState(); // run on load
+
+        // Expand when hovering the trigger area (top ~100px)
+        trigger.addEventListener("mouseenter", () => {
+            // Only expand if the user has scrolled down past threshold
+            if (window.scrollY > 80) {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        });
+
+        // Collapse only when leaving entire bar — not while clicking inside it
+        topbar.addEventListener("mouseleave", () => {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            }
+        });
+    </script>
+    <script>
+        // Smooth scroll to top
+        document.getElementById("backToTop").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+        const btn = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            btn.style.display = window.scrollY > 200 ? "block" : "none";
+        });
+
+    </script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

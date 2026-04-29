@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System - Kayla Marcus Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/caseStudy.css" />
+    <link rel="icon" href="../assets/logo-navy.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="../index.html"><img class="logo" alt="Kayla Marcus's logo" src="../assets/logo-navy.png"></a>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">
+                        <img src="../assets/icons/home-round.png" alt="index.html">Home
+                    </a></li>
+                <li><a href="../portfolio.html">
+                        <img src="../assets/icons/portfolio-filled.png" alt="portfolio.html">Portfolio
+                    </a></li>
+                <li><a href="../about.html">
+                        <img src="../assets/icons/about.png" alt="about.html">About
+                    </a></li>
+                <a href="../contact.html" class="btn">Contact Me</a>
+            </ul>
+            <a href="../contact.html" class="btn">Contact Me</a>
+        </nav>
+    </header>
+    <div class="layout">
+        <div id="topbar" class="topbar expanded">
+            <div id="topbar-trigger"></div>
+            <div class="topbar-inner">
+                <div class="content">
+                    <h3>Dream™ Case Studies</h3>
+                    <div class="link">
+                        <div class="topbar-first">
+                            <h4>Top Case Studies</h4>
+                            <ul>
+                                <li><a href="./repairTicketRedesign.html">Repair Workflow Usability Redesign</a></li>
+                                <li class="active"><a href="./designSystem.html">Dream™ Design System</a></li>
+                                <li><a href="./navigationRedesign.html">Navigation Redesign</a></li>
+                            </ul>
+                        </div>
+                        <div class="topbar-second">
+                            <h4>More Case Studies</h4>
+                            <ul>
+                                <li><a href="./designInHouseUsers.html">Designing for In-House Users</a></li>
+                                <li><a href="./visualReporting.html">Visual Reporting</a></li>
+                                <li><a href="./onboarding.html">Onboarding & First User Experience</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="../caseStudy.html" class="btn-secondary">Go Back</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="case-section">
+            <h1>Dream™ Design System</h1>
+            <p>The Dream™ Design System was created to bring consistency, efficiency, and clarity to the visual design
+                and UI component structure of Dream™, a device management and repair platform for K-12 schools. Before
+                the system was introduced, I, the sole designer on the team, and developers frequently rebuilt common
+                interface elements from
+                scratch, resulting in subtle inconsistencies in spacing, colors, and component behavior over time. Even
+                when these differences were small, they led to <strong>increased development time, slower page builds,
+                    and UI elements that did not fully align visually</strong>.</p>
+            <p class="add-space">The goal of building the Dream™ Design System was to establish a repeatable, scalable
+                foundation for both <strong>design and development</strong>. The system introduced structured design
+                tokens, standardized typography and spacing rules, and reusable, flexible UI components that could be
+                drag-and-dropped into new designs. Developers then translated these components into Storybook to support
+                accurate and efficient implementation in code. Together, these efforts <strong>reduced friction across
+                    the design-to-development workflow and enabled faster feature creation</strong>.</p>
+            <div class="btn-group">
+                <a href="#visual-summary" class="btn">Jump to Visual Summary</a>
+            </div>
+
+        </section>
+        <section class="case-section light">
+            <h2>Context & Problem</h2>
+            <p>Before the design system, Dream™ had grown rapidly over time, with UI patterns being developed as needed
+                for each new feature. Because there was no centralized component library, variations emerged in areas
+                such as button styles, table spacing, input fields, and color usage. While each interface worked
+                individually, the product as a whole <strong>lacked a unified visual language</strong>.</p>
+            <hr>
+            <p>This had several impacts:</p>
+            <ul>
+                <li><strong>UI inconsistencies</strong> created a subtle but noticeable lack of cohesion across pages.
+                </li>
+                <li>I (and developers) spent <strong>extra time recreating components</strong> for every new
+                    feature or update.</li>
+                <li>Minor visual differences accumulated, <strong>introducing avoidable bugs and rework</strong> during
+                    development.</li>
+            </ul>
+            <hr>
+            <p>Because I was the sole designer on the team, I was frequently revisiting previous files to copy
+                components, manually aligning spacing, and verifying color usage. Meanwhile, developers needed precise
+                documentation to ensure UI fidelity, which was difficult when component structures weren’t standardized
+                yet. The lack of a shared system created friction, even when collaboration was strong.</p>
+        </section>
+        <section class="case-section light noTop">
+            <h2>Goals</h2>
+            <ol>
+                <li><strong>Establish a consistent visual language</strong> across the product through defined color,
+                    spacing, typography, and elevation tokens.</li>
+                <li><strong>Create reusable, scalable components</strong> in Figma that make designing new pages faster
+                    and more consistent.</li>
+                <li><strong>Enable accurate implementation</strong> through shared naming conventions and a Storybook
+                    component library.</li>
+                <li><strong>Reduce design and development time</strong> for new features by standardizing core UI
+                    structures.</li>
+            </ol>
+        </section>
+        <section class="case-section">
+            <h2>Design Process</h2>
+            <p class="add-space">I began by auditing the existing UI across Dream™, noting where components differed in
+                appearance or
+                spacing depending on who built them or when they were created. I grouped these patterns into categories,
+                such as buttons, inputs, banners, modals, navigation, and tables, and identified where consolidation
+                or redefinition was needed.</p>
+            <p>To support scalability, I structured the system using a token-based approach:</p>
+            <ul class="add-space">
+                <li><strong>Reference Tokens</strong> (raw values such as #0057D9)</li>
+                <li><strong>System Tokens</strong> (semantic roles such as <code>color.primary</code>)</li>
+                <li><strong>Component Tokens</strong> (state-specific values such as <code>button.primary.hover</code>)
+                </li>
+            </ul>
+            <section class="case-images">
+                <h3>Figma System Design Tokens</h3>
+                <img src="../assets/images/case-study/design-system-large.png" alt="Design tokens used in Figma."
+                    class="image-medium add-space" />
+            </section>
+            <div class="callout-container">
+                <div class="callout">
+                    <p><b>These tokens controlled:</b></p>
+                    <ul class="add-space">
+                        <li>Color Palette (UI, semantic, and neutral tones)</li>
+                        <li>Spacing scale</li>
+                        <li>Typography hierarchy and weights</li>
+                        <li>Corner radius</li>
+                        <li>Shadows and elevation</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Once the tokens were set, I rebuilt key components using <strong>variant-based Figma components</strong>
+                to allow flexible configuration. For example:</p>
+            <ul class="add-space">
+                <li><strong>Buttons</strong> include sizing options, hover/active/disabled states, and style variations
+                    (primary, secondary, outlined).</li>
+                <li><strong>Input fields</strong> include multiple field types (text, select, date) and also include
+                    structural variants such as labels, icons, and interactive states.</li>
+                <li><strong>Modals</strong> support multiple size tiers and standard header/body/footer layouts.</li>
+                <li><strong>Tables</strong> include variants for tabs, headers, and action rows.</li>
+            </ul>
+            <section class="case-images" id="visual-summary">
+                <h3>Reusable Figma Components</h3>
+                <img src="../assets/images/case-study/projects/banner-component.PNG"
+                    alt="Created a variable banner to display across pages and components." class="image-medium" />
+                <img src="../assets/images/case-study/projects/button-component.PNG"
+                    alt="Created reusabled button components in Figma for varying states." class="image-medium" />
+                <img src="../assets/images/case-study/projects/navigation-component.PNG"
+                    alt="Created drag-and-drop navigation components." class="image-medium" />
+                <img src="../assets/images/case-study/mui-input-fields-component-large.png"
+                    alt="Created MUI fields as components in Figma." class="image-medium" />
+            </section>
+            <p>Throughout this process, I collaborated closely with a software developer responsible for implementing
+                the Storybook version of the system. We aligned naming conventions, reviewed component structure
+                regularly, and clarified expected interaction behavior. I provided detailed documentation directly
+                within Figma, including usage guidelines and example configurations.</p>
+        </section>
+        <section class="case-section">
+            <h2>Outcome</h2>
+            <p class="add-space">The Dream™ Design System has been integrated into both the design and development
+                workflows. Designers
+                can now build new mockups <strong>significantly faster</strong> using drag-and-drop standardized
+                components, and developers can reference fully documented, ready-to-use components in Storybook.</p>
+            <div class="callout-container">
+                <div class="callout">
+                    <p><b>Key results include:</b></p>
+                    <ul class="add-space">
+                        <li><strong>Faster design and development</strong> — for example, form layouts that previously
+                            took
+                            ~4
+                            minutes per input field now take ~40 seconds.</li>
+                        <li><strong>Greater consistency</strong> — UI elements now share unified spacing, color, and
+                            interaction
+                            patterns across the product.</li>
+                        <li><strong>Smoother collaboration</strong> — shared naming and documentation improved clarity
+                            between
+                            design and engineering.</li>
+                    </ul>
+                </div>
+            </div>
+            <p>The system continues to expand naturally as new interface patterns emerge. Recently, new banner
+                components representing different alert types (info, warning, error, promotional) were added following
+                usage needs across multiple pages.</p>
+            <p>Today, the Dream™ Design System serves as a scalable foundation that supports clarity, cohesion, and
+                efficiency for both design and development across the platform.</p>
+        </section>
+        </main>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn-secondary">Back to Top</button>
+
+    <footer>
+        <div class="summary">
+            <p class="accent-text">Thanks for stopping by!</p>
+            <p>I’m Kayla Marcus, a designer and developer passionate about turning complex ideas into clean,
+                beautiful
+                digital
+                experiences.</p>
+        </div>
+        <div class="actions">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <div class="social-icon"><a href="https://www.linkedin.com/in/kayla-marcus/" target="_blank"><img
+                            src="../assets/icons/linkedin_icon.png"></a></div>
+                <div class="social-icon"><a
+                        href="mailto:kayla.marc10@gmail.com?subject=Interested in Working With You!&body=Hi%20Kayla,%0D%0A%0D%0A"><img
+                            src="../assets/icons/mail.png"></a></div>
+            </div>
+            <p class="copyright">&copy; 2025 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const topbar = document.getElementById("topbar");
+        const trigger = document.getElementById("topbar-trigger");
+
+        function updateScrollState() {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            } else {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        }
+
+        window.addEventListener("scroll", updateScrollState);
+        updateScrollState(); // run on load
+
+        // Expand when hovering the trigger area (top ~100px)
+        trigger.addEventListener("mouseenter", () => {
+            // Only expand if the user has scrolled down past threshold
+            if (window.scrollY > 80) {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        });
+
+        // Collapse only when leaving entire bar — not while clicking inside it
+        topbar.addEventListener("mouseleave", () => {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            }
+        });
+    </script>
+    <script>
+        // Smooth scroll to top
+        document.getElementById("backToTop").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+        const btn = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            btn.style.display = window.scrollY > 200 ? "block" : "none";
+        });
+
+    </script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

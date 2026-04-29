@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Redesign - Kayla Marcus Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/caseStudy.css" />
+    <link rel="icon" href="../assets/logo-navy.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="../index.html"><img class="logo" alt="Kayla Marcus's logo" src="../assets/logo-navy.png"></a>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">
+                        <img src="../assets/icons/home-round.png" alt="index.html">Home
+                    </a></li>
+                <li><a href="../portfolio.html">
+                        <img src="../assets/icons/portfolio-filled.png" alt="portfolio.html">Portfolio
+                    </a></li>
+                <li><a href="../about.html">
+                        <img src="../assets/icons/about.png" alt="about.html">About
+                    </a></li>
+                <a href="../contact.html" class="btn">Contact Me</a>
+            </ul>
+            <a href="../contact.html" class="btn">Contact Me</a>
+        </nav>
+    </header>
+    <div class="layout">
+        <div id="topbar" class="topbar expanded">
+            <div id="topbar-trigger"></div>
+            <div class="topbar-inner">
+                <div class="content">
+                    <h3>Dream™ Case Studies</h3>
+                    <div class="link">
+                        <div class="topbar-first">
+                            <h4>Top Case Studies</h4>
+                            <ul>
+                                <li><a href="./repairTicketRedesign.html">Repair Workflow Usability
+                                        Redesign</a></li>
+                                <li><a href="./designSystem.html">Dream™ Design System</a></li>
+                                <li class="active"><a href="./navigationRedesign.html">Navigation Redesign</a></li>
+                            </ul>
+                        </div>
+                        <div class="topbar-second">
+                            <h4>More Case Studies</h4>
+                            <ul>
+                                <li><a href="./designInHouseUsers.html">Designing for In-House Users</a></li>
+                                <li><a href="./visualReporting.html">Visual Reporting</a></li>
+                                <li><a href="./onboarding.html">Onboarding & First User Experience</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="../caseStudy.html" class="btn-secondary">Go Back</a>
+                </div>
+            </div>
+        </div>
+
+        <main class="case-content">
+            <section class="case-section">
+                <h1>Navigation Redesign</h1>
+                <p>As Dream™ grew, its left-hand navigation became increasingly cluttered, holding over ten pages and
+                    forcing users to scroll to access even the most common features. The placement of key elements, like
+                    the search bar buried at the top of the sidebar, made them easy to overlook, while the top-right
+                    area
+                    of the interface remained mostly unused. This layout not only slowed users down but made the
+                    experience especially frustrating for new users unfamiliar with the app’s structure.</p>
+                <p>To solve these issues, I led a navigation redesign that reorganized content into clear, logical
+                    groups and redistributed elements across the interface to maximize space and usability. By
+                    introducing dropdowns, relocating the search bar, and adding a secondary navigation to the
+                    top-right, the layout became cleaner and more intuitive. The result is a navigation system that
+                    feels
+                    familiar, reduces cognitive load, and <strong>helps users find what they need faster</strong>,
+                    without disrupting
+                    their existing workflows.</p>
+
+                <div class="btn-group">
+                    <a href="#visual-summary" class="btn">Jump to Visual Summary</a>
+                </div>
+            </section>
+
+            <section class="case-section light">
+                <h2>Context & Problem</h2>
+                <p>Dream™ Asset Management is a SaaS platform used by K–12 schools to manage devices, repairs, and
+                    much more. The main navigation relied heavily on a left sidebar that held more than ten
+                    pages—sometimes
+                    even more depending on user permissions. While each item included an icon for recognition,
+                    <strong>the
+                        structure felt crowded and unorganized</strong>. The search bar was tucked into the top of the
+                    sidebar, where
+                    users rarely noticed it, and on laptop-sized screens, the accordion for lesser-used pages like <i>My
+                        Account</i>
+                    or <i>Features</i> was often cut off. This was a significant issue given that many of Dream™'s
+                    school-based users would access the system on Chromebooks.
+                </p>
+                <p>For school staff, IT managers, and repair techs, this layout made it difficult to find what they
+                    needed quickly. Even experienced users may have found themselves scrolling or guessing where pages
+                    might be
+                    located, which slowed their workflow and leads to frustration, especially on smaller devices.</p>
+            </section>
+
+            <section class="case-section light noTop">
+                <h2>Goals</h2>
+                <p>The main goal was to create a <strong>more intuitive, organized navigation system</strong> that
+                    reflected how users think about their tasks. My objectives were to:</p>
+                <ol class="olPadding">
+                    <li><strong>Reduce clutter</strong> by grouping pages logically.</li>
+                    <li>Use underutilized screen space to <strong>minimize scrolling</strong>.</li>
+                    <li><strong>Improve discoverability</strong> by placing key items in familiar, expected locations.
+                    </li>
+                </ol>
+                <p>Essentially, I wanted users to know where to go <em>without thinking twice</em>. For example, “Users”
+                    would
+                    naturally live under <i>Manage</i>, and personal profile settings would appear in the top-right
+                    corner where most users expect them.</p>
+                <p>I shared these ideas with the development team, but time constraints prevented the ideas from being
+                    progressed further. However, when the CEO later requested a navigation cleanup, it became the
+                    perfect opportunity to put these
+                    ideas into action and align both usability and leadership goals.</p>
+            </section>
+
+            <section class="case-section">
+                <h2>Design Process</h2>
+                <p>The redesign began with a <strong>UX/UI workshop</strong> where the CEO, product owner, and I used a
+                    FigJam board to
+                    organize pages into logical categories, similar to a card-sorting exercise. We discussed multiple
+                    layout options, weighing their pros and cons from both user and development perspectives.</p>
+                <div class="callout-container">
+                    <div class="callout">
+                        <p><b>I proposed the following ideas to improve navigation UX/UI:</b></p>
+                        <ul class="add-space">
+                            <li>Incorporating a <strong>dropdown structure</strong> for the left sidebar so users could
+                                focus on specific task groups, like <i>Manage</i> or <i>Reporting</i> without being
+                                distracted by unrelated pages.</li>
+                            <li>Moving secondary items (like <i>My Profile</i>, <i>My Account</i>, and <i>Features</i>)
+                                to the <strong>top-right navigation panel</strong> to make better use of space, a
+                                standard and more intuitive location.</li>
+                            <li>Relocating the search bar to the top bar for better visibility and consistency.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Before presenting these ideas to the CEO, I reviewed them with developers and the product owner to
+                    confirm technical feasibility. Once approved, we began gradually rolling out the changes, allowing
+                    the team and users to adapt smoothly without disrupting their daily workflows.</p>
+            </section>
+
+            <section class="case-images" id="visual-summary">
+                <h2>Visual Summary (Before & After)</h2>
+                <!-- <p>The updated navigation introduced <strong>clear grouping, improved spacing, and collapsible
+                        sections</strong> that
+                    kept the sidebar concise and focused. I used consistent spacing, smaller gaps (8px) within groups
+                    and
+                    larger gaps (12px) between groups, to visually reinforce organization.</p>
+                <p>I also added <strong>dropdown components</strong> for grouped pages and a <strong>top-right panel</strong> for secondary items,
+                    allowing users to quickly access less-used pages without visual overload. The difference between the
+                    old and new layouts is striking: what once felt cluttered and overwhelming now feels structured and
+                    intuitive.</p> -->
+                <h3>Before - Original Navigation Structure</h3>
+                <!-- <div id="blurNotice" class="blur-notice blue">
+                    <img src="../assets/icons/info-blue.svg" alt="" class="banner-icon">
+                    <p>The previous design has been intentionally blurred to maintain confidentiality and
+                        professionalism. I’d be happy to share the full version upon request or during an interview to
+                        better illustrate the improvements made.</p>
+                </div> -->
+                <a href="../assets/images/case-study/projects/dream-navigation-before.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/dream-navigation-before.png"
+                        alt="Before Screenshot. Issues include cognitive overload, poor visual hierachy, and a lack of guidenace for the user."
+                        class="image-large" /></a>
+                <p class="openImageText">Tap or click the image above to view it full size in a new tab.</p>
+                <hr>
+                <h3>After - Redesigned Navigation Structure</h3>
+                <!-- <div id="blurNotice" class="blur-notice">
+                    <img src="../assets/icons/warning_24dp_8D8F57.svg" alt="" class="banner-icon">
+                    <p>Since this design is not live in Dream™ yet, the details have been intentionally blurred for
+                        confidentiality. The main elements of the design are described in callout boxes.</p>
+                </div> -->
+                <img src="../assets/images/case-study/projects/dream-navigation-after.png"
+                    alt="After Screenshot (Blurred). Improvements made include clear grouping for related task groups, moving lesser-used pages to the top right to declutter while ensuring the pages were accessible, and relocating the search bar to the top bar for better discoverability."
+                    class="image-large" />
+                <p class="openImageText">Tap or click the image above to view it full size in a new tab.</p>
+            </section>
+
+            <section class="case-section">
+                <h2>Outcome</h2>
+                <p>Even during the gradual rollout, the improvements were noticeable. I found my own navigation flow to
+                    be smoother and faster, with less cognitive strain when switching between pages. The design didn’t
+                    disrupt my normal workflow—it simply made it <strong>easier</strong>.</p>
+                <div class="callout-container">
+                    <div class="callout">
+                        <p><b>Once the full rollout completes, I anticipate measurable improvements in:</b></p>
+                        <ul class="add-space">
+                            <li><strong>Faster fast completion</strong> due to reduced visual clutter.</li>
+                            <li><strong>Fewer navigation errors</strong> as users locate pages within predictable
+                                groups.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Most importantly, this project strengthened cross-team collaboration between design, product, and
+                    development. I’m proud of how research and advocacy for better UX/UI led to tangible improvements in
+                    everyday usability.</p>
+                <p>If I were to revisit this project, I’d like to be more proactive about addressing navigational
+                    complexity earlier—before it grows into a larger usability issue.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn-secondary">Back to Top</button>
+
+    <footer>
+        <div class="summary">
+            <p class="accent-text">Thanks for stopping by!</p>
+            <p>I’m Kayla Marcus, a designer and developer passionate about turning complex ideas into clean,
+                beautiful
+                digital
+                experiences.</p>
+        </div>
+        <div class="actions">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <div class="social-icon"><a href="https://www.linkedin.com/in/kayla-marcus/" target="_blank"><img
+                            src="../assets/icons/linkedin_icon.png"></a></div>
+                <div class="social-icon"><a
+                        href="mailto:kayla.marc10@gmail.com?subject=Interested in Working With You!&body=Hi%20Kayla,%0D%0A%0D%0A"><img
+                            src="../assets/icons/mail.png"></a></div>
+            </div>
+            <p class="copyright">&copy; 2025 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const topbar = document.getElementById("topbar");
+        const trigger = document.getElementById("topbar-trigger");
+
+        function updateScrollState() {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            } else {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        }
+
+        window.addEventListener("scroll", updateScrollState);
+        updateScrollState(); // run on load
+
+        // Expand when hovering the trigger area (top ~100px)
+        trigger.addEventListener("mouseenter", () => {
+            // Only expand if the user has scrolled down past threshold
+            if (window.scrollY > 80) {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        });
+
+        // Collapse only when leaving entire bar — not while clicking inside it
+        topbar.addEventListener("mouseleave", () => {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            }
+        });
+    </script>
+    <script>
+        // Smooth scroll to top
+        document.getElementById("backToTop").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+        const btn = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            btn.style.display = window.scrollY > 200 ? "block" : "none";
+        });
+
+    </script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

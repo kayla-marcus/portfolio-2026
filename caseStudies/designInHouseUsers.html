@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Designing for In-House Users - Kayla Marcus Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/caseStudy.css" />
+    <link rel="icon" href="../assets/logo-navy.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="../index.html"><img class="logo" alt="Kayla Marcus's logo" src="../assets/logo-navy.png"></a>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">
+                        <img src="../assets/icons/home-round.png" alt="index.html">Home
+                    </a></li>
+                <li><a href="../portfolio.html">
+                        <img src="../assets/icons/portfolio-filled.png" alt="portfolio.html">Portfolio
+                    </a></li>
+                <li><a href="../about.html">
+                        <img src="../assets/icons/about.png" alt="about.html">About
+                    </a></li>
+                <a href="../contact.html" class="btn">Contact Me</a>
+            </ul>
+            <a href="../contact.html" class="btn">Contact Me</a>
+        </nav>
+    </header>
+    <div class="layout">
+        <div id="topbar" class="topbar expanded">
+            <div id="topbar-trigger"></div>
+            <div class="topbar-inner">
+                <div class="content">
+                    <h3>Dream™ Case Studies</h3>
+                    <div class="link">
+                        <div class="topbar-first">
+                            <h4>Top Case Studies</h4>
+                            <ul>
+                                <li><a href="./repairTicketRedesign.html">Repair Workflow Usability
+                                        Redesign</a></li>
+                                <li><a href="./designSystem.html">Dream™ Design System</a></li>
+                                <li><a href="./navigationRedesign.html">Navigation Redesign</a></li>
+                            </ul>
+                        </div>
+                        <div class="topbar-second">
+                            <h4>More Case Studies</h4>
+                            <ul>
+                                <li class="active"><a href="./designInHouseUsers.html">Designing for In-House Users</a>
+                                </li>
+                                <li><a href="./visualReporting.html">Visual Reporting</a></li>
+                                <li><a href="./onboarding.html">Onboarding & First User Experience</a></li>
+                                <!-- <li><a href="./coreProcesses.html">Simplifying Core Processes</a></li>
+                                <li><a href="./uiAuditing.html">UI Auditing</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="../caseStudy.html" class="btn-secondary">Go Back</a>
+                </div>
+            </div>
+        </div>
+
+        <main class="case-content">
+            <section class="case-section">
+                <h1>Designing for In-House Users</h1>
+                <p>Dream™ Asset Management is a SaaS platform used by K–12 schools to manage devices, repairs, and
+                    inventory. While the platform originally served external users, the software team was tasked with
+                    creating an internal section for the company’s own repair technicians. Previously, these technicians
+                    used NetSuite to manage repair workflows for student Chromebooks—a system that was functional but
+                    costly and cumbersome. Transitioning these workflows into Dream would eliminate NetSuite licensing
+                    fees, <strong>saving the company tens of thousands of dollars annually</strong>.</p>
+                <p>The success of this transition depended on <strong>ensuring the in-house team could perform their
+                        tasks just
+                        as efficiently, or more efficiently, within Dream</strong>. Because technicians rely on precise
+                    status tracking
+                    and fast task completion, the design needed to simplify complex processes, minimize errors, and make
+                    the workflow visually clear and intuitive for both new and experienced users.</p>
+                <div class="btn-group">
+                    <a href="#visual-summary" class="btn">Jump to Visual Summary</a>
+                </div>
+            </section>
+
+            <section class="case-section light">
+                <h2>Context & Problem</h2>
+                <p>Technicians worked with over twenty possible repair statuses, requiring them to search through long
+                    dropdowns and select the correct one each time. This slowed their workflow and increased the risk of
+                    selecting the wrong status. The existing interface also lacked visual guidance; users couldn’t
+                    easily
+                    see where a repair stood in the overall process, which could make onboarding new hires more
+                    difficult.
+                    <strong>Although the primary motivation for moving away from NetSuite was cost savings, these
+                        usability
+                        challenges presented a strong opportunity to improve the technicians’ daily experience.</strong>
+                </p>
+            </section>
+
+            <section class="case-section light noTop">
+                <h2>Goals</h2>
+                <p>The overall objective of this project was to move techicians into Dream™; however, my main goal was
+                    to <strong>improve the technicians' experience and reduce cognitive load</strong> by:</p>
+                <ol class="olPadding">
+                    <li><strong>Simplifying</strong> complex status flows.</li>
+                    <li>Making the process more <strong>visual</strong>.</li>
+                    <li>Improving efficiency, accuracy, and navigation.</li>
+                </ol>
+                <p>Although no formal success metrics were defined, early feedback after implementation suggested that
+                    technicians found the new experience significantly easier to use than the previous system.</p>
+            </section>
+
+            <section class="case-section">
+                <h2>Design Process</h2>
+                <p>Throughout the design process, I collaborated closely with the lead developer and product owner.
+                    Working with the lead developer, we ensured technical feasibility and addressed time-sensitive
+                    trade-offs due to licensing expiring in early November. Since the project started in July, we had 4
+                    months to design, receive feedback, iterate, develop, and train in the technicians.</p>
+                <p>My contribution to the project was creating low-fidelity and high-fidelity designs based on user
+                    requirements and expectations. The product owner led user interviews and relayed findings to me
+                    through detailed user stories.</p>
+                <div class="callout-container">
+                    <div class="callout">
+                        <p><b>I used the user stories to:</b></p>
+                        <ul class="add-space">
+                            <li><strong>Understand technician needs</strong>, reducing the introduction of new pain
+                                points.</li>
+                            <li>Cross-reference them with existing Dream functionality to <strong>promote development
+                                    efficiency</strong>.</li>
+                            <li>Clarify any uncertainties through direct disucssions with the product owner.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>In Figma, I created a streamlined, card-based workflow interface that replaced text-heavy tables with
+                    reusable visual components. Each card highlighted essential device details—like ticket number,
+                    serial number, and assigned technician—while dynamic chips displayed frequently changing
+                    information. The bottom of each card featured primary and secondary action buttons arranged by
+                    frequency of use, reducing unnecessary clicks and errors. Columns represented each repair status,
+                    showing both ticket counts and an at-a-glance view of overall progress. I applied Dream’s design
+                    system tokens for consistency and conducted a usability walkthrough via prototype with the
+                    technicians, product owner, and lead developer to validate the
+                    flow.</p>
+            </section>
+
+            <section class="case-images" id="visual-summary">
+                <h2>Visual Summary</h2>
+                <p class="openImageText left">Tap or click the images below to view them full size in a new tab.</p>
+                <a href="../assets/images/case-study/projects/rma-workflow-view.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/rma-workflow-view.png"
+                        alt="Card workflow view with two status columsn and multiple cards organized in each column."
+                        class="image-large" /></a>
+                <p class="caption">Using a workflow card view transforms a complex repair process into <strong>a simple
+                        visual experience</strong>.</p>
+                <a href="../assets/images/case-study/projects/rma-wide-screen.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/rma-wide-screen.png"
+                        alt="Card workflow view on a 1920px screen, where cards create two columns within their respective status column."
+                        class="image-large" /></a>
+                <p class="caption"><strong>Accomodating for multiple screen sizes</strong> was necessary as some
+                    technicians may use laptops and others may use large monitors.</p>
+                <a href="../assets/images/case-study/projects/rma-search-results.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/rma-search-results.png"
+                        alt="The search box is active and the status columns are filtered to only show the tickets related to the current search"
+                        class="image-large" /></a>
+                <p class="caption">Showing a breakdown of tickets that match a search <strong>improves
+                        efficiency</strong> by giving the user instant feedback.</p>
+                <a href="../assets/images/case-study/projects/rma-no-results-search.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/rma-no-results-search.png"
+                        alt="No tickets match the current search so a link recommends the user checks the 'All Tickets' tab instead of a filtered tab."
+                        class="image-large" /></a>
+                <p class="caption">A simple message displaying the filtered tab name and a link to check the "All
+                    Tickets"
+                    tab <strong> guides the user to complete their goal.</strong></p>
+                <a href="../assets/images/case-study/projects/rma-assign-technician.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/rma-assign-technician.png"
+                        alt="A primary icon button placed on each ticket card allows the user to quickly assign a technician to the ticket."
+                        class="image-large" /></a>
+                <p class="caption">An icon button opens an input field that allows a technician to be quickly assigned
+                    to a ticket, which <strong> keeps the process moving efficiently.</strong></p>
+                <a href="../assets/images/case-study/projects/rma-other-queue-options.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/rma-other-queue-options.png"
+                        alt="A dropdown menu opens when the 'Other' button is selected with additional available actions."
+                        class="image-large" /></a>
+                <p class="caption">Using an “Other” dropdown for additional queue actions <strong>keeps the primary
+                        status
+                        workflow clear</strong> while still supporting less-frequent paths.</p>
+                <a href="../assets/images/case-study/projects/rma-more-ticket-options.png" target="_blank"><img
+                        src="../assets/images/case-study/projects/rma-more-ticket-options.png"
+                        alt="A kebab menu at the top right of each card opens a menu with lesser-used options."
+                        class="image-large" /></a>
+                <p class="caption">A kebab menu keeps the <strong>core workflow clean</strong> and separates queues from
+                    additional actions by tucking them away, but still giving the user access within one click.</p>
+            </section>
+
+            <section class="case-section">
+                <h2>Outcome</h2>
+                <p>The final design transformed the repair process into a more intuitive, visual experience. Instead of
+                    scrolling through dropdowns, technicians could now see where each repair stood and quickly take the
+                    most relevant next step. The redesign eliminated much of the unnecessary complexity from the old
+                    system, helping users stay focused and reducing onboarding time for new team members.</p>
+                <div class="callout-container">
+                    <div class="callout">
+                        <p><b>In summary, the design:</b></p>
+                        <ul class="add-space">
+                            <li>Translated a complex, text-heavy process into a <strong>clear, visual workflow.</strong>
+                            </li>
+                            <li><strong>Reduced errors</strong> by prioritizing the most common next-step actions.</li>
+                            <li><strong>Simplified navigation</strong> for both new and experienced technicians.</li>
+                            <li>Maintained consistency with Dream™'s existing design system for seamless integration and
+                                the ability to <strong>reuse components</strong> in the future.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Feedback from the product owner and technicians was overwhelmingly positive. They found the new
+                    interface much simpler and appreciated how it guided them through the workflow. For similar projects
+                    in the future, I’d
+                    like to create a more interactive prototype covering every possible flow, allowing users to explore
+                    the design hands-on and provide even deeper feedback before implementation. This could help catch
+                    constraints or requirements that I or the team missed before the feature is live.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn-secondary">Back to Top</button>
+
+    <footer>
+        <div class="summary">
+            <p class="accent-text">Thanks for stopping by!</p>
+            <p>I’m Kayla Marcus, a designer and developer passionate about turning complex ideas into clean,
+                beautiful
+                digital
+                experiences.</p>
+        </div>
+        <div class="actions">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <div class="social-icon"><a href="https://www.linkedin.com/in/kayla-marcus/" target="_blank"><img
+                            src="../assets/icons/linkedin_icon.png"></a></div>
+                <div class="social-icon"><a
+                        href="mailto:kayla.marc10@gmail.com?subject=Interested in Working With You!&body=Hi%20Kayla,%0D%0A%0D%0A"><img
+                            src="../assets/icons/mail.png"></a></div>
+            </div>
+            <p class="copyright">&copy; 2025 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const topbar = document.getElementById("topbar");
+        const trigger = document.getElementById("topbar-trigger");
+
+        function updateScrollState() {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            } else {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        }
+
+        window.addEventListener("scroll", updateScrollState);
+        updateScrollState(); // run on load
+
+        // Expand when hovering the trigger area (top ~100px)
+        trigger.addEventListener("mouseenter", () => {
+            // Only expand if the user has scrolled down past threshold
+            if (window.scrollY > 80) {
+                topbar.classList.add("expanded");
+                topbar.classList.remove("collapsed");
+            }
+        });
+
+        // Collapse only when leaving entire bar — not while clicking inside it
+        topbar.addEventListener("mouseleave", () => {
+            if (window.scrollY > 80) {
+                topbar.classList.add("collapsed");
+                topbar.classList.remove("expanded");
+            }
+        });
+    </script>
+    <script>
+        // Smooth scroll to top
+        document.getElementById("backToTop").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+        const btn = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            btn.style.display = window.scrollY > 200 ? "block" : "none";
+        });
+
+    </script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>
