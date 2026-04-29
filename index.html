@@ -599,11 +599,11 @@
       console.log("clientWidth:", document.documentElement.clientWidth);
       console.log("screen.width:", screen.width);
       
-      if (window.clientWidth <= 1079 && window.clientWidth > 520) {
+      if (document.documentElement.clientWidth <= 1079 && document.documentElement.clientWidth > 520) {
         console.log("Changing to in first option");
         videoSource.src = './assets/videos/hero-title.mp4';
         heroVideo.width = 496;
-      } else if (window.clientWidth <= 520) {
+      } else if (document.documentElement.clientWidth <= 520) {
         console.log("Changing to hero-title.mp4");
         videoSource.src = './assets/videos/hero-title.mp4';
         console.log("Changing to 320");
