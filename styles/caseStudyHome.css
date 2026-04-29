@@ -1,0 +1,148 @@
+/* Home Styles */
+
+.hero {
+    background: var(--color-white);
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    margin-top: 16px;
+}
+
+.eyebrow {
+    font-size: 18px;
+    color: #FFF;
+    background-color: var(--color-navy);
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 100px;
+    margin-top: 56px;
+    font-weight: 500;
+}
+
+.hero .subtitle-small {
+    margin-top: 40px;
+}
+
+.btn-group {
+    margin-top: 56px;
+}
+
+.caseStudies-container {
+    background-color: #FFF;
+    padding: 80px 24px;
+    margin-top: 80px;
+}
+
+.caseStudies {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.caseStudies h3 {
+    margin-top: 80px;
+}
+
+.caseStudyGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 24px auto;
+    gap: 16px;
+}
+
+.caseStudyGroup a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    padding: 16px 24px;
+    background-color: #FFF;
+    border-radius: 16px;
+    border: 1px solid var(--color-accent);
+    flex: 1;
+    font-weight: 500;
+    min-width: 28%;
+    max-width: 28%;
+}
+
+.caseStudyGroup img {
+    width: 24px;
+}
+
+@media (max-width: 520px) {
+
+    .caseStudyGroup a {
+        padding: 20px 24px;
+        min-width: 90%;
+        max-width: 90%;
+    }
+}
+
+
+.caseStudyGroup a:hover {
+    background-color: #eff3fa;
+}
+
+/* Carousel CSS */
+
+.carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    position: relative;
+    margin: 64px 0;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    scroll-snap-align: start;
+    display: flex;
+    gap: 20px;
+    animation: scroll-left 80s linear infinite;
+    will-change: transform;
+    width: max-content;
+}
+
+.carousel-item {
+    min-width: 400px;
+    height: 240px;
+    background-color: var(--color-gray);
+    flex: 0 0 auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+@media (max-width: 520px) {
+
+    .carousel-item {
+        min-width: 300px;
+        height: 170px;
+    }
+}

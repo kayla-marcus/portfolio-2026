@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayla Marcus Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/caseStudyHome.css">
+    <link rel="icon" href="assets/logo-navy.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="js/caseStudyModal.js" async></script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html"><img class="logo" alt="Kayla Marcus's logo" src="assets/logo-navy.png"></a>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">
+                        <img src="assets/icons/home-round.png" alt="index.html">Home
+                    </a></li>
+                <li><a href="portfolio.html">
+                        <img src="assets/icons/portfolio-filled.png" alt="portfolio.html">Portfolio
+                    </a></li>
+                <li><a href="about.html">
+                        <img src="assets/icons/about.png" alt="about.html">About
+                    </a></li>
+                <a href="contact.html" class="btn">Contact Me</a>
+            </ul>
+            <a href="contact.html" class="btn">Contact Me</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="header-text">
+            <p class="eyebrow">UX/UI Case Study</p>
+            <h1>Dream™ Asset Management<span class="subtitle-large">by Vivacity Tech</span></h1>
+            <p class="subtitle-small">Explore <strong>how and why I improved Dream™'s UX/UI</strong> by redesigning core
+                workflows,
+                streamlining technician processes, and ensuring clarity with consistent, inuitive interfaces—all while
+                preserving technical feasibility.</p>
+        </div>
+        <div class="btn-group">
+            <a href="portfolio.html" class="btn btn-sectiondark">See More Projects</a>
+            <a href="about.html" class="btn-secondary-dark">Read About Me</a>
+        </div>
+    </section>
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="carousel-track">
+            <a href="./caseStudies/visualReporting.html"><img class="carousel-item" src="assets/images/case-study/account-credit-history-report-large.png"
+                alt="Account Credit History Report" data-title="Clear Reporting on Credit Usage"
+                data-desc="Designed interactive tables, widgets, and charts to make credit usage clear and actionable for users."></a>
+
+            <a href="./caseStudies/designSystem.html"><img class="carousel-item"
+                    src="assets/images/case-study/design-system-large.png" alt="Design System"
+                    data-title="Building the App's Design System"
+                    data-desc="Developed the app's first design system using Figma to streamline and unify UI patterns."></a>
+
+            <a href="./caseStudies/repairTicketRedesign.html"><img class="carousel-item blur"
+                    src="assets/images/case-study/repair-ticket-details-redesign-large2.png"
+                    alt="Making Repair Tickets More Intuitive" data-title="Repair Ticket Details Redesign"
+                    data-desc="Improved clarity by surfacing important details and probable user actions in repair tickets."></a>
+
+            <a href="./caseStudies/designSystem.html"><img class="carousel-item"
+                    src="assets/images/case-study/mui-input-fields-component-large.png" alt="MUI Input Fields"
+                    data-title="Boosting Efficiency in Figma With MUI"
+                    data-desc="Built reusable MUI input components in Figma, cutting workflow time from 4 minutes to 40 seconds."></a>
+
+            <a href="./caseStudies/onboarding.html"><img class="carousel-item blur" src="assets/images/case-study/self-signup-large.png" alt="Self Signup"
+                data-title="Improving Onboarding for New Users"
+                data-desc="Created a streamlined onboarding flow to reduce friction and boost user engagement."></a>
+
+            <a href="./caseStudies/designInHouseUsers.html"><img class="carousel-item" src="assets/images/case-study/rma-workflow-view-large.png" alt="RMA Workflow"
+                data-title="Migrating Technicians to Dream™ UI"
+                data-desc="Simplified repair technician migration to Dream™, improving UX and supporting company cost savings."></a>
+
+            <!-- <img class="carousel-item blur" src="assets/images/case-study/request-repair-boxes-large.png"
+                alt="Request Repair Boxes" data-title="Making Repair Box Requests Easy"
+                data-desc="Built a frictionless design enabling users to request boxes efficiently and independently.">
+
+            <img class="carousel-item blur" src="assets/images/case-study/order-tracker-large.png" alt="Order Tracker"
+                data-title="Prototyping Order Tracker Experience"
+                data-desc="Prototyped an order tracker to help stakeholders visualize better customer order experiences."> -->
+
+            <img class="carousel-item" src="assets/images/case-study/breakage-report-large.png" alt="Breakage Report"
+                data-title="At-a-Glance Visual of Device Reliability"
+                data-desc="Replaced text-heavy reporting with clear, color-coded indicators, making it easier for users to quickly assess device reliability.">
+
+            <!-- <img class="carousel-item" src="assets/images/case-study/privacy-policy-large.png" alt="Privacy Policy"
+                data-title="Simplifying Legal Content for Users"
+                data-desc="Focused on user readability by adjusting line width and highlighting important legal information."> -->
+
+            <!-- duplicated items for smooth looping -->
+            <a href="./caseStudies/visualReporting.html"><img class="carousel-item" src="assets/images/case-study/account-credit-history-report-large.png"
+                alt="Account Credit History Report" data-title="Clear Reporting on Credit Usage"
+                data-desc="Designed interactive tables, widgets, and charts to make credit usage clear and actionable for users."></a>
+
+            <a href="./caseStudies/designSystem.html"><img class="carousel-item"
+                    src="assets/images/case-study/design-system-large.png" alt="Design System"
+                    data-title="Building the App's Design System"
+                    data-desc="Developed the app's first design system using Figma to streamline and unify UI patterns."></a>
+
+            <a href="./caseStudies/repairTicketRedesign.html"><img class="carousel-item blur"
+                    src="assets/images/case-study/repair-ticket-details-redesign-large2.png"
+                    alt="Making Repair Tickets More Intuitive" data-title="Repair Ticket Details Redesign"
+                    data-desc="Improved clarity by surfacing important details and probable user actions in repair tickets."></a>
+
+            <a href="./caseStudies/designSystem.html"><img class="carousel-item"
+                    src="assets/images/case-study/mui-input-fields-component-large.png" alt="MUI Input Fields"
+                    data-title="Boosting Efficiency in Figma With MUI"
+                    data-desc="Built reusable MUI input components in Figma, cutting workflow time from 4 minutes to 40 seconds."></a>
+
+            <a href="./caseStudies/onboarding.html"><img class="carousel-item blur" src="assets/images/case-study/self-signup-large.png" alt="Self Signup"
+                data-title="Improving Onboarding for New Users"
+                data-desc="Created a streamlined onboarding flow to reduce friction and boost user engagement."></a>
+
+            <a href="./caseStudies/designInHouseUsers.html"><img class="carousel-item" src="assets/images/case-study/rma-workflow-view-large.png" alt="RMA Workflow"
+                data-title="Migrating Technicians to Dream™ UI"
+                data-desc="Simplified repair technician migration to Dream™, improving UX and supporting company cost savings."></a>
+
+            <!-- <img class="carousel-item blur" src="assets/images/case-study/request-repair-boxes-large.png"
+                alt="Request Repair Boxes" data-title="Making Repair Box Requests Easy"
+                data-desc="Built a frictionless design enabling users to request boxes efficiently and independently.">
+
+            <img class="carousel-item blur" src="assets/images/case-study/order-tracker-large.png" alt="Order Tracker"
+                data-title="Prototyping Order Tracker Experience"
+                data-desc="Prototyped an order tracker to help stakeholders visualize better customer order experiences."> -->
+
+            <img class="carousel-item" src="assets/images/case-study/breakage-report-large.png" alt="Breakage Report"
+                data-title="At-a-Glance Visual of Device Reliability"
+                data-desc="Replaced text-heavy reporting with clear, color-coded indicators, making it easier for users to quickly assess device reliability.">
+
+            <!-- <img class="carousel-item" src="assets/images/case-study/privacy-policy-large.png" alt="Privacy Policy"
+                data-title="Simplifying Legal Content for Users"
+                data-desc="Focused on user readability by adjusting line width and highlighting important legal information."> -->
+        </div>
+    </div>
+    <section class="caseStudies-container">
+        <div class="caseStudies">
+            <h2>Top Dream™ Case Studies</h2>
+            <p class="subtitle-mini"><strong>High-impact projects</strong> that shaped Dream’s user experience and
+                software development team efficiency.</p>
+            <section class="caseStudyGroup">
+                <a href="./caseStudies/repairTicketRedesign.html">
+                    <img src="./assets/icons/construction_24dp_0866D1_FILL0_wght400_GRAD0_opsz24.svg">
+                    <!-- <img src="./assets/icons/construction_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg"> -->
+                    Repair Workflow Usability Redesign
+                </a>
+                <a href="./caseStudies/designSystem.html">
+                    <img src="./assets/icons/design-system-blue.svg">
+                    Dream™ Design System
+                </a>
+                <a href="./caseStudies/navigationRedesign.html">
+                    <img src="./assets/icons/navigation.svg">
+                    Navigation Redesign
+                </a>
+            </section>
+            <h3>Additional Dream™ Case Studies</h3>
+            <section class="caseStudyGroup">
+                <a href="./caseStudies/designInHouseUsers.html">
+                    <img src="./assets/icons/hardhat.svg">
+                    Designing for In-House Users
+                </a>
+                <a href="./caseStudies/onboarding.html">
+                    <img src="./assets/icons/about.png">
+                    Onboarding & First User Experience
+                </a>
+                <a href="./caseStudies/visualReporting.html">
+                    <img src="./assets/icons/table-eye.svg">
+                    Visual Reporting
+                </a>
+                <!-- <a href="./caseStudies/designSystem.html">
+                    <img src="./assets/icons/simple.svg">
+                    Simplifying Core Processes
+                </a>
+                <a href="./caseStudies/designSystem.html">
+                    <img src="./assets/icons/audit.svg">
+                    UI Auditing
+                </a> -->
+            </section>
+        </div>
+    </section>
+    <footer>
+        <div class="summary">
+            <p class="accent-text">Thanks for stopping by!</p>
+            <p>I’m Kayla Marcus, a designer and developer passionate about turning complex ideas into clean, beautiful
+                digital
+                experiences.</p>
+        </div>
+        <div class="actions">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <div class="social-icon"><a href="https://www.linkedin.com/in/kayla-marcus/" target="_blank"><img
+                            src="assets/icons/linkedin_icon.png"></a></div>
+                <div class="social-icon"><a
+                        href="mailto:kayla.marc10@gmail.com?subject=Interested in Working With You!&body=Hi%20Kayla,%0D%0A%0D%0A"><img
+                            src="assets/icons/mail.png"></a></div>
+            </div>
+            <p class="copyright">&copy; 2025 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const items = document.querySelectorAll('.fade-in-on-scroll');
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    obs.unobserve(entry.target); // Animate once
+                }
+            });
+        }, {
+            threshold: 0.1,
+        });
+
+        items.forEach(item => observer.observe(item));
+    </script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+
+</html>

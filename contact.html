@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Kayla Marcus Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="icon" href="assets/logo-navy.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="js/caseStudyModal.js" async></script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html"><img class="logo" alt="Kayla Marcus's logo" src="assets/logo-navy.png"></a>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">
+                        <img src="assets/icons/home-round.png" alt="index.html">Home
+                    </a></li>
+                <li><a href="portfolio.html">
+                        <img src="assets/icons/portfolio.png" alt="portfolio.html">Portfolio
+                    </a></li>
+                <li><a href="about.html">
+                        <img src="assets/icons/about.png" alt="about.html">About
+                    </a></li>
+                <a href="contact.html" class="btn">Contact Me</a>
+            </ul>
+            <a href="contact.html" class="btn">Contact Me</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="header-text">
+            <h1>Contact Me. <span class="emoji">🤝</span> </h1>
+            <!-- <p class="subtitle-medium">Want to learn more?</p> -->
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <!-- Left Column -->
+        <div class="contact-left">
+            <h2>Let's work together to create <span class="tagline">something amazing!</span></h2>
+            <p>
+                If you’re interested in seeing more of my work, have questions about a project, or simply want to
+                explore what we could create together, I’d love to hear from you!
+            </p>
+
+
+            <div class="contact-info">
+                <div class="contact-detail">
+                    <img src="./assets/icons/mail.svg">
+                    <p>kayla.marc10@gmail.com</p>
+                </div>
+                <div class="contact-detail">
+                    <img src="./assets/icons/phone.svg">
+                    <p>(320) 368-2779</p>
+                </div>
+                <div class="contact-detail">
+                    <img src="./assets/icons/address.svg">
+                    <p>Prinsburg, MN</p>
+                </div>
+            </div>
+
+
+            <img class="portrait" src="assets/images/kayla-marcus-portrait.jpg" alt="Portrait" />
+        </div>
+
+
+        <!-- Right Column -->
+        <div class="contact-right">
+            <h3>I'd love to hear from you!<br>Let's get in touch.</h3>
+            <!-- Success Banner -->
+            <div id="success-banner" class="banner success-banner">
+                <strong>Message sent!</strong> Thanks for reaching out — I’ll get back to you soon.
+            </div>
+
+            <!-- Error Banner -->
+            <div id="error-banner" class="banner error-banner">
+                <strong>Something went wrong.</strong> Your message could not be sent. Please try again.
+            </div>
+            <form class="contact-form" action="./send.php" method="POST">
+
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" required />
+
+                <div class="columns">
+                    <div class="column-left">
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" placeholder="✉ name@example.com" required />
+                    </div>
+                    <div class="column-right">
+                        <label for="phone">Phone Number <span
+                                style="color: var(--color-mediumgray);">(Opt.)</span></label>
+                        <input id="phone" name="phone" type="phone" placeholder="🕻 (555) 555-5555" />
+                    </div>
+                </div>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Hi, Kayla! I want to..." rows="6"
+                    style="resize: vertical;" required></textarea>
+
+                <button class="btn" style="width:max-content;padding:12px 24px;">Send Message</button>
+            </form>
+
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="summary">
+            <p class="accent-text">Thanks for stopping by!</p>
+            <p>I’m Kayla Marcus, a designer and developer passionate about turning complex ideas into clean, beautiful
+                digital
+                experiences.</p>
+        </div>
+        <div class="actions">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <div class="social-icon"><a href="https://www.linkedin.com/in/kayla-marcus/" target="_blank"><img
+                            src="assets/icons/linkedin_icon.png"></a></div>
+                <div class="social-icon"><a
+                        href="mailto:kayla.marc10@gmail.com?subject=Interested in Working With You!&body=Hi%20Kayla,%0D%0A%0D%0A"><img
+                            src="assets/icons/mail.png"></a></div>
+            </div>
+            <p class="copyright">&copy; 2025 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const items = document.querySelectorAll('.fade-in-on-scroll');
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    obs.unobserve(entry.target); // Animate once
+                }
+            });
+        }, {
+            threshold: 0.1,
+        });
+
+        items.forEach(item => observer.observe(item));
+    </script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const status = params.get("status");
+
+            if (status === "success") {
+                document.getElementById("success-banner").style.display = "block";
+            }
+            else if (status === "error") {
+                document.getElementById("error-banner").style.display = "block";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

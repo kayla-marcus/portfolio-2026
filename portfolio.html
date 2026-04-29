@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Kayla Marcus Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/portfolio.css" />
+    <link rel="icon" href="assets/logo-navy.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
+  const tabUnderline = document.querySelector('.tab-underline');
+
+  // Animate project tiles in a tab one by one
+  function animateProjectTiles(tabContent) {
+    const tiles = tabContent.querySelectorAll('.project-tile');
+    tiles.forEach(tile => tile.classList.remove('visible')); // reset in case of tab switch
+    tiles.forEach((tile, index) => {
+      setTimeout(() => {
+        tile.classList.add('visible');
+      }, index * 200); // stagger delay
+    });
+  }
+
+  function moveUnderlineTo(button) {
+    const rect = button.getBoundingClientRect();
+    const parentRect = button.parentElement.getBoundingClientRect();
+    tabUnderline.style.width = `${rect.width}px`;
+    tabUnderline.style.transform = `translateX(${rect.left - parentRect.left}px)`;
+  }
+
+  function activateTab(tabId) {
+    // Update active buttons
+    tabButtons.forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-tab') === tabId);
+    });
+
+    // Update active tab content
+    tabContents.forEach(content => {
+      content.classList.toggle('active', content.id === tabId);
+    });
+
+    // Animate project tiles for this tab
+    const activeContent = document.getElementById(tabId);
+    if (activeContent) animateProjectTiles(activeContent);
+
+    // Move underline
+    const activeButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+    if (activeButton) moveUnderlineTo(activeButton);
+  }
+
+  // Click handler
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const tabId = button.getAttribute('data-tab');
+      activateTab(tabId);
+
+      // Update URL hash without jumping
+      history.replaceState(null, null, `#${tabId}`);
+    });
+  });
+
+  // On page load, activate initial tab
+  const initialTab = window.location.hash.substring(1) || "web-design"; // default tab
+  activateTab(initialTab);
+});
+</script>
+
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html"><img class="logo" alt="Kayla Marcus's logo" src="assets/logo-navy.png"></a>
+
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">
+                        <img src="assets/icons/home-round.png" alt="index.html">Home
+                    </a></li>
+                <li><a href="portfolio.html">
+                        <img src="assets/icons/portfolio-filled.png" alt="portfolio.html">Portfolio
+                    </a></li>
+                <li><a href="about.html">
+                        <img src="assets/icons/about.png" alt="about.html">About
+                    </a></li>
+                <a href="contact.html" class="btn">Contact Me</a>
+            </ul>
+            <a href="contact.html" class="btn">Contact Me</a>
+        </nav>
+    </header>
+
+    <section class="project-types">
+        <div class="content">
+            <h1 class="hero-animate hero-title">My Work. <span class="emoji">📂</span> </h1>
+            <p class="subtitle-small hero-animate hero-subtitle">My focus is <strong>UX/UI and product design</strong>
+                for SaaS apps, supported by
+                front-end
+                knowledge that
+                bridges design and development. I also create branding, illustrations, and marketing visuals.</p>
+            <!-- <h3>What kind of project are you looking for?</h3> -->
+
+            <div class="tab-buttons hero-animate hero-buttons">
+                <button class="tab-button active" data-tab="web-design">Web Design</button>
+                <button class="tab-button" data-tab="web-dev">Web Development</button>
+                <button class="tab-button" data-tab="supporting-works">Supporting Works</button>
+                <!-- <button class="tab-button" data-tab="case-study"><img src="assets/icons/case-study-thick.png">Dream™
+                    Case
+                    Study</button> -->
+                <div class="tab-underline"></div>
+            </div>
+
+            <div class="tab-contents">
+                <div class="tab-content active" id="web-design">
+                    <a href="projects/dream-asset-management.html">
+                        <div class="project-tile">
+                            <div class="image-wrapper">
+                                <img src="assets/images/dream-project-thumbnail.png"
+                                    alt="Dream™ Asset Management Ticket App Design & Redesign" />
+                                <!-- Overlay -->
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="project-details">
+                                <p class="project-title">SaaS asset management app (Dream™ Asset Management) <span> |
+                                        Vivacity Tech PBC</span>
+                                </p>
+                                <p class="project-description">Redesigned and prototyped an asset management & repair
+                                    ticket app to improve usability, streamline workflows, and enhance clarity for K-12
+                                    schools. Focused on intuitive navigation, clean UI, and efficient task
+                                    management while preserving technical feasibility.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./projects/content-creator-portfolio.html">
+                        <div class="project-tile">
+                            <div class="image-wrapper">
+                                <img src="assets/images/thumbnails/videography-thumbnail-lines-rectangle-phone.png"
+                                    alt="Content Creator and Video Editor Portfolio" />
+                                <!-- Overlay -->
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="project-details">
+                                <p class="project-title">Custom Wix portfolio showcasing digital media work <span> | Freelance </span></p>
+                                <p class="project-description">Designed and built a custom Wix portfolio to highlight
+                                    video
+                                    editing and content projects. Used no-code tools to create an engaging layout,
+                                    organize
+                                    media, and ensure cross-device usability.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="projects/personal-portfolio.html" class="hidden">
+                        <div class="project-tile">
+                            <div class="image-wrapper">
+                                <img src="assets/images/kaylamarcus-portfolio-2.png"
+                                    alt="Content Creator and Video Editor Portfolio" />
+                                <!-- Overlay -->
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="project-details">
+                                <p class="project-title">Personal Web Design & Development Portfolio <span>(Where You
+                                        Are Right Now!)</span></p>
+                                <p class="project-description">Built a fully custom portfolio website from scratch,
+                                    showcasing design and development projects with a focus on performance,
+                                    accessibility, and authentic personal branding.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab-content" id="web-dev">
+                    <a href="./projects/college-cost-calculator.html">
+                        <div class="project-tile">
+                            <div class="image-wrapper">
+                                <img src="assets/images/thumbnails/cost-calculator-rectangle.png"
+                                    alt="Interactive calculator for estimating college semester expenses." />
+                                <!-- Overlay -->
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="project-details">
+                                <p class="project-title">Interactive College Cost Calculator <span> | Personal
+                                        Project</span></p>
+                                <p class="project-description">Designed and built a responsive calculator that helps
+                                    students estimate Ridgewater College semester expenses. Developed using JavaScript
+                                    for calculations,
+                                    focusing on clear financial visualization. <i>Note: This was a tool built for my own
+                                        use and was not used by the college.</i></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./projects/checkmate-tutoring.html">
+                        <div class="project-tile">
+                            <div class="image-wrapper">
+                                <img src="assets/images/ind-checkmate-tutoring.png"
+                                    alt="Informational website for scheduling tutoring services" />
+                                <!-- Overlay -->
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="project-details">
+                                <p class="project-title">Custom-coded informational and scheduling site <span> |
+                                        Personal Project</span></p>
+                                <p class="project-description">Designed and developed a responsive website from
+                                    scratch
+                                    with
+                                    HTML, CSS, and JavaScript. Focused on accessibility, intuitive navigation and a
+                                    clear
+                                    presentation of tutoring and simple scheduling information.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab-content" id="supporting-works">
+                    <a href="projects/software-release-onepager.html">
+                        <div class="project-tile">
+                            <div class="image-wrapper">
+                                <img src="assets/images/marketing-release-template.png"
+                                    alt="Release one-pager for quarterly software releases to be used by the marketing team." />
+                                <!-- Overlay -->
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="project-details">
+                                <p class="project-title">Quarterly Software Release One-Pager <span> | Vivacity Tech
+                                        PBC</span></p>
+                                <p class="project-description">Designed a concise, visually engaging one-pager to help
+                                    the marketing team promote and communicate key features of quarterly software
+                                    updates.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="projects/event-marketing-materials.html">
+                        <div class="project-tile">
+                            <div class="image-wrapper">
+                                <img src="assets/images/marketing-materials.png"
+                                    alt="Marketing materials for local events." />
+                                <!-- Overlay -->
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="project-details">
+                                <p class="project-title">Local Event Marketing Materials<span> | Pro Bono Work</span>
+                                </p>
+                                <p class="project-description">Designed posters and event buttons to promote local
+                                    community gatherings. Focused on bold visuals, clear messaging, and consistent
+                                    branding to capture attention. <i>Note: Names, photos, and event details have been
+                                        removed for privacy.</i></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab-content" id="case-study">
+                    <div class="case-study-chapter">
+                        <picture>
+                            <source media="(min-width: 1073px)" srcset="assets/images/case-study/mui-in-figma.png">
+                            <source media="(min-width: 801px)"
+                                srcset="assets/images/case-study/mui-in-figma-medium.png">
+                            <img src="assets/images/case-study/mui-in-figma-small.png" alt="">
+                        </picture>
+                        <div class="chapter-description right">
+                            <h2>Standardizing UI Patterns to Speed Up Design</h2>
+                            <p class="subtitle-small">Developed a reusable token and component design system in Figma,
+                                replacing repetitive manual edits with consistent, state-ready elements. This reduced
+                                typical
+                                workflow time for input fields from 4 minutes to 40 seconds, resulting in <strong>a 6x
+                                    boost</strong>
+                                in speed and an overall improvement in consistency.</p>
+                            <a href="./caseStudies/designSystem.html" class="btn-secondary">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="case-study-chapter">
+                        <picture>
+                            <source media="(min-width: 1073px)"
+                                srcset="assets/images/case-study/visualizing-repair-rates.png">
+                            <source media="(min-width: 801px)"
+                                srcset="assets/images/case-study/visualizing-repair-rates-medium.png">
+                            <img src="assets/images/case-study/visualizing-repair-rates-small.png" alt="">
+                        </picture>
+                        <div class="chapter-description left">
+                            <h2>Simplifying Data for Faster Decisions</h2>
+                            <p class="subtitle-small">Transformed text-heavy repair reports into visual summaries using
+                                color-coded cards, tables, and quick comparison cues. This enabled users to assess
+                                device
+                                reliability at a glance and <strong>act more confidently and efficiently</strong>.</p>
+                            <a href="./caseStudies/visualReporting.html" class="btn-secondary">Read More</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="case-study-chapter">
+                        <picture>
+                            <source media="(min-width: 1073px)" srcset="assets/images/case-study/widget-redesign.png">
+                            <source media="(min-width: 801px)"
+                                srcset="assets/images/case-study/widget-redesign-medium.png">
+                            <img src="assets/images/case-study/widget-redesign-small.png" alt="">
+                        </picture>
+                        <div class="chapter-description right">
+                            <h2>Clarifying Metrics with Widgets</h2>
+                            <p class="subtitle-small">Redesigned and coded interactive React widgets
+                                <strong>to improve visual hierarchy</strong>, ensuring key metrics capture attention
+                                first
+                                instead of icons. This update made reports more intuitive and actionable, combining
+                                thoughtful
+                                UI design with front-end implementation.
+                            </p>
+                            <a href="./caseStudies/visualReporting.html" class="btn-secondary">Read More</a>
+                        </div>
+                    </div> -->
+
+                    <div class="case-study-chapter">
+                        <picture>
+                            <source media="(min-width: 1073px)" srcset="assets/images/case-study/rma-workflow.png">
+                            <source media="(min-width: 801px)"
+                                srcset="assets/images/case-study/rma-workflow-medium.png">
+                            <img src="assets/images/case-study/rma-workflow-small.png" alt="">
+                        </picture>
+                        <div class="chapter-description right">
+                            <h2>Reducing Cognitive Load With Visual Workflows</h2>
+                            <p class="subtitle-small">Redesigned a complex repair workflow into a clear, visual system
+                                that reduced cognitive load, improved accuracy, and helped technicians <strong>complete
+                                    tasks
+                                    faster with fewer errors</strong>.
+                            </p>
+                            <a href="./caseStudies/designInHouseUsers.html" class="btn-secondary">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="case-study-chapter">
+                        <picture>
+                            <source media="(min-width: 1073px)"
+                                srcset="assets/images/case-study/simplifying-complex-processes.png">
+                            <source media="(min-width: 801px)"
+                                srcset="assets/images/case-study/simplifying-complex-processes-medium.png">
+                            <img src="assets/images/case-study/simplifying-complex-processes-small.png" alt="">
+                        </picture>
+                        <div class="chapter-description left dark">
+                            <h2>Simplifying Complex Processes</h2>
+                            <p class="subtitle-small">Explore <strong>how and why I improved Dream™’s UX/UI </strong>by
+                                redesigning core workflows, streamlining technician processes, and ensuring clarity with
+                                consistent,
+                                intuitive interfaces—all while preserving technical feasibility.</p>
+                            <a href="./caseStudy.html" class="btn-secondary-dark">See Full Dream™ Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <footer class="tall">
+        <div class="summary">
+            <p class="accent-text">Thanks for stopping by!</p>
+            <p>I’m Kayla Marcus, a designer and developer passionate about turning complex ideas into clean, beautiful
+                digital experiences.</p>
+        </div>
+        <div class="actions">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <div class="social-icon"><a href="https://www.linkedin.com/in/kayla-marcus/" target="_blank"><img
+                            src="assets/icons/linkedin_icon.png"></a></div>
+                <div class="social-icon"><a
+                        href="mailto:kayla.marc10@gmail.com?subject=Interested in Working With You!&body=Hi%20Kayla,%0D%0A%0D%0A"><img
+                            src="assets/icons/mail.png"></a></div>
+            </div>
+            <p class="copyright">&copy; 2025 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            const tabUnderline = document.querySelector('.tab-underline');
+
+            function moveUnderlineTo(button) {
+                const rect = button.getBoundingClientRect();
+                const parentRect = button.parentElement.getBoundingClientRect();
+                tabUnderline.style.width = `${rect.width}px`;
+                tabUnderline.style.transform = `translateX(${rect.left - parentRect.left}px)`;
+            }
+
+            function activateTab(tabId) {
+                // Update active buttons
+                tabButtons.forEach(btn => {
+                    btn.classList.toggle('active', btn.getAttribute('data-tab') === tabId);
+                });
+
+                // Update active tab content
+                tabContents.forEach(content => {
+                    content.classList.toggle('active', content.id === tabId);
+                });
+
+                // Move underline
+                const activeButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+                if (activeButton) moveUnderlineTo(activeButton);
+            }
+
+            // Click handler
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.getAttribute('data-tab');
+                    activateTab(tabId);
+
+                    // Update URL hash without jumping the page
+                    history.replaceState(null, null, `#${tabId}`);
+                });
+            });
+
+            // On page load, check if a hash is set
+            const initialTab = window.location.hash.substring(1) || "web-design"; // default tab
+            activateTab(initialTab);
+        });
+    </script> -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
