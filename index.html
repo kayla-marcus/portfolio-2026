@@ -587,11 +587,14 @@
   <script>
     // Hero video responsive switching
     function updateHeroVideo() {
+      console.log("in update hero video 1");
       const heroVideo = document.getElementById('hero-video');
       if (!heroVideo) return;
       
       const videoSource = heroVideo.querySelector('source');
       if (!videoSource) return;
+
+      console.log("in update hero video 2");
       
       if (window.innerWidth <= 1079 && window.innerWidth > 520) {
         videoSource.src = './assets/videos/hero-title.mp4';
