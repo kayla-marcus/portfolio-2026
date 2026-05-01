@@ -445,6 +445,7 @@
   </footer>
   <script>
     const featuredCases = document.querySelectorAll('.featured-case');
+    const observerThreshold = document.documentElement.clientWidth <= 920 ? 0.25 : 0.4;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -457,7 +458,7 @@
         });
       },
       {
-        threshold: 0.4
+        threshold: observerThreshold
       }
     );
 
