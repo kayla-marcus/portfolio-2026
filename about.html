@@ -45,11 +45,11 @@
     </header>
     <section class="hero">
         <div class="header-text">
-            <h1>About Me.</h1>
-            <p class="subtitle-medium">Design. Code. Connect.</p>
+            <h1 class="hero-animate hero-title">About Me.</h1>
+            <p class="subtitle-medium hero-animate hero-subtitle">Design. Code. Connect.</p>
         </div>
     </section>
-    <main class="about-me">
+    <main class="about-me reveal reveal-delay-1">
         <div class="about-me-content">
             <div class="text">
                 <h2>What I Do.</h2>
@@ -69,16 +69,16 @@
                     <a href="./assets/kaylamarcus-webdesigndevelopment-resume2025.pdf" target="_blank" class="btn-secondary">View Resume</a>
                 </div>
             </div>
-            <img src="./assets/images/kayla-marcus-portrait.jpg">
+            <img class="reveal reveal-delay-2" src="./assets/images/kayla-marcus-portrait.jpg">
         </div>
     </main>
     <section class="experience">
-        <div class="experience-content">
+        <div class="experience-content reveal reveal-delay-2">
             <h2>Experience.</h2>
             <hr class="dark">
             <div class="college-section">
                 <div class="time">
-                    <h3>Junior Web Designer</h3>
+                    <h3>Junior UI/UX Designer</h3>
                     <p>Vivacity Tech PBC</p>
                     <p class="date">Dec. 2024 - Present</p>
                 </div>
@@ -125,7 +125,7 @@
             </div>
         </div>
     </section>
-    <section class="education">
+    <section class="education reveal reveal-delay-3">
         <h2>Education.</h2>
         <hr class="light">
         <div class="college-section">
@@ -197,6 +197,26 @@
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('show');
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealItems = document.querySelectorAll('.reveal');
+
+            if ('IntersectionObserver' in window) {
+                const revealObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.18 });
+
+                revealItems.forEach(item => revealObserver.observe(item));
+            } else {
+                revealItems.forEach(item => item.classList.add('visible'));
+            }
         });
     </script>
 
